@@ -1,0 +1,15 @@
+{
+  "a01": {
+    "title": "Wedding",
+    "date": "June 12, 2017",
+    "time": {
+      "start": "17:00",
+      "end": "20:00"
+    },
+    "description": "<p>A very special occasion that I'd like to celebrate with you!</p><p>Please come and be part of this special event with me.</p>",
+    "public": true,
+    "rsvp": true,
+    "location": "TBD",
+    "contact": "klutes90@gmail.com"
+  }
+}

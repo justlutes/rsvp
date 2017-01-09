@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!--[if lte IE 8]><html lang="en" class="no-js oldIE ie no-angular"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie9 ie" ng-app="myApp"><![endif]-->
+<!--[if gt IE 9|!IE]><!--><html class="no-js" ng-app="myApp"><!-- <![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>RSVP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<base href="/" />
+
+		<!-- Stylesheets -->
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="all">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+		<link href="/assets/css/styles.css" rel="stylesheet" media="all">
+	</head>
+
+	<body ng-cloak>
+		<!-- HEADER -->
+		<header class="header clearfix">
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li><a ng-href="/">Home</a></li>
+						<li><a ng-href="/events">Events</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-- CONTENT (Angular View) -->
+		<div class="layout-view" ng-view autoscroll="true"></div>
+
+		<!-- FOOTER -->
+		<footer class="footer small clearfix">
+			<a href="https://github.com/ng-bridge-ann-arbor/ng-rsvp">ng-rsvp</a>
+		</footer>
+
+		<!-- JS Libraries -->
+		<!-- ..jQuery (minified) -->
+		<script src="/assets/js/vendor/jquery-2.1.3.min.js"></script>
+
+		<!-- Angular and necessary modules (full development) -->
+		<script src="/assets/js/vendor/angular-1.3.15.js"></script>
+		<script src="/assets/js/vendor/angular-route.js"></script>
+		<script src="/assets/js/vendor/angular.sanitize.js"></script>
+		<script src="/assets/js/vendor/angular.messages.js"></script>
+
+		<!-- Angular app JS files -->
+		<script src="/ng-app/core/app.module.js"></script>
+		<script src="/ng-app/core/app.config.js"></script>
+		<script src="/ng-app/core/trustAsHtml.filter.js"></script>
+		<script src="/ng-app/core/eventData.service.js"></script>
+
+		<script src="/ng-app/home/Home.ctrl.js"></script>
+
+		<script src="/ng-app/events/Events.ctrl.js"></script>
+
+		<script src="/ng-app/event-detail/EventDetail.ctrl.js"></script>
+		<script src="/ng-app/event-detail/rsvp.dir.js"></script>
+
+	</body>
+</html>

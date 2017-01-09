@@ -1,0 +1,74 @@
+/*----------------------------------------------- AngularJS --*/
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+/*----------------------------------------------- Effects --*/
+
+a,
+a:hover,
+button,
+button:hover,
+.eventTable-row,
+.eventTable-row:hover {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+/*----------------------------------------------- Header --*/
+
+header .navbar {
+    border-radius: 0;
+}
+
+/*----------------------------------------------- Events Listing --*/
+
+.query-clear {
+
+}
+.eventTable-row {
+    cursor: pointer;
+}
+.eventTable-row:hover {
+    background: #eee;
+}
+
+/*----------------------------------------------- Event Detail --*/
+
+/*-- Event info --*/
+
+.event-info {
+	margin: 10px 0;
+}
+.event-info dt,
+.event-info dd {
+	display: inline;
+}
+.event-info dt i {
+	text-align: center;
+	width: 16px;
+}
+.event-info dd:after {
+	content: '\A';
+	white-space: pre;
+}
+
+/*-- RSVP modal --*/
+
+.modal {
+	background: rgba(0,0,0,.5);
+}
+
+/*----------------------------------------------- Footer --*/
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
