@@ -653,25 +653,47 @@ input.text, input.search, textarea.textarea {
 }
 
 .her {
+	@media all and (min-width: 50em) {
+		background-image: url('/assets/img/him.png');
+		background-repeat: no-repeat;
+	}
 	p {
 		padding: 0 10px;
 	}
 	img {
-		@media all and (max-width: 50em) {
+		transition: opacity .2s ease-in;
+		-webkit-transition: opacity .2s ease-in; /*safari and chrome */
+		-o-transition: opacity .2s ease-in; /* opera */ 
+		&:hover {
+			opacity: 0;
+			filter: alpha(opacity=0);
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		}
+		@media all and (min-width: 50em) {
 			width: 100%;
-			padding-top: 15px;
 		}
 	}
 }
 
 .him {
+	@media all and (min-width: 50em) {
+		background-image: url('/assets/img/her.png');
+		background-repeat: no-repeat;
+	}
 	p {
 		padding: 0 10px;
 	}
 	img {
-		@media all and (max-width: 50em) {
+		transition: opacity .2s ease-in;
+		-webkit-transition: opacity .2s ease-in; /*safari and chrome */
+		-o-transition: opacity .2s ease-in; /* opera */ 
+		&:hover {
+			opacity: 0;
+			filter: alpha(opacity=0);
+			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		}
+		@media all and (min-width: 50em) {
 			width: 100%;
-			padding-top: 15px;
 		}
 	}
 }
