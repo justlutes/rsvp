@@ -6,20 +6,29 @@
 Colors:
 */
 
-$yellow: #cbd500;
+
 $grey: #444;
 $turq: #68BCA5;
+$honey_gold: #D1A054; /* rgb 209, 160, 84 */
+$bonfire: #A62A20; /* rgb 166, 42, 32 */
+$burnt_orange: #BF5700; /* rgb 191, 87, 0 */
+$chocolate: #4E2E28; /* rgb 78,46,40 */
+$burgundy: #8C001A; /* rgb 140, 0, 26 */
+
 
 body {
 	background-color:#f6f6f6;
 }
 
 .container {
-    width:960px;
+    width:100%;
     height:auto;
     margin:0px auto;
     padding:0px;
     clear:both;
+	@media all and (min-width: 50em) {
+		width: 960px;
+	}
 }
 
 /* columns */
@@ -56,10 +65,16 @@ body {
 }
 
 .fourcol {
-    width: 220px;
+    width: 100%;
     height: auto;
-    float: left;
-    margin: 0 10px;
+    margin: 0;
+	@media all and (min-width: 50em) {
+		width: 220px;
+		height: auto;
+		float: left;
+		margin: 0 10px;
+	}
+	
 }
 
 .direction-header {
@@ -93,7 +108,7 @@ body {
 }
 
 .fourcol-prop:hover {
-	background: #cbd500;
+	background: $burnt_orange;
 	cursor: pointer;
 }
 
@@ -119,10 +134,16 @@ body {
 }
 
 .fourcol_3 {
-    width: 700px;
+    width: 95%;
     height: auto;
-    float: left;
+    float: none;
     margin: 0 10px;
+	@media all and (min-width: 50em) {
+		width: 700px;
+		height: auto;
+		float: left;
+		margin: 0 10px;
+	}
 }
 
 .fivecol_3 {
@@ -201,38 +222,39 @@ img.prop:hover {
 
 /*~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~*/
 
-#menu {
-	
+#menu {	
 	margin: -43px auto 0 auto;
 	text-align: center;
-	width: 635px;
+	width: 100%;
 	height: auto;
-	background: #f6f6f6;
-	padding: 19px 0 19px 0;
+	padding: 19px 0;
 	font-family: "vinyl",sans-serif;
 	font-weight: 400;
-	font-size: 26px;
+	font-size: 16px;
 	line-height: 26px;
 	text-transform: uppercase;
 	letter-spacing: -.03em;
+	@media all and (min-width: 50em) {
+		background: #f6f6f6;
+		width: 50vw;
+		font-size: 26px;
+	}
 }
 
 
 li#menunav {
-	display:inline;
+	display: inline;
 	text-align: center;
 	margin: 0 auto;
 }
 
 
 #menunav a {
-	color:#000;
+	color: $chocolate;
 	margin:0 7px;
-}
-
-
-#menunav a:hover {
-	border-bottom: 5px solid #cbd500;
+	&:hover {
+		border-bottom: 5px solid $honey_gold;
+	}
 }
 
 body#home a#homenav,
@@ -242,25 +264,25 @@ body#details a#detailsnav,
 body#registry a#registrynav,
 body#services a#servicesnav {
 color: #000;
-border-bottom: 5px solid #cbd500;
+border-bottom: 5px solid $burnt_orange;
 }
 
 
 ::selection {
-    background:#cbd500;
+    background:$burnt_orange;
 }
 ::-moz-selection {
-    background:#cbd500;
+    background:$burnt_orange;
 }
 ::-webkit-selection {
-    background:#cbd500;
+    background:$burnt_orange;
 }
 
 
 /*~~~~~~~ AND SO WE BEGIN ~~~~~~~*/
 
 p a, blockquote a {
-    color: #68BCA5;
+    color: $burgundy;
     background-color: none;
     text-decoration: none;
     -webkit-transition: color .2s ease-in; /*safari and chrome */
@@ -268,7 +290,7 @@ p a, blockquote a {
 }
 
 p a:hover, blockquote a:hover {
-    color:#cbd500;
+    color:$burnt_orange;
 
 }
 
@@ -352,7 +374,7 @@ h2 a, h3 a {
 }
 
 h2 a:hover, h3 a:hover {
-	color: #cbd500;
+	color: $burnt_orange;
 }
 
 ul.details li {
@@ -367,7 +389,7 @@ ul.details li {
 }
 
 .count {
-	background:#68BCA5;
+	background:$chocolate;
 	padding:12px 0 0 0;
 	width:100%;
 	height:151px;
@@ -376,7 +398,7 @@ ul.details li {
 }
 
 .count:hover {
-	background: #cbd500;
+	background: $burnt_orange;
 	cursor:pointer;
 }
 
@@ -401,7 +423,17 @@ ul.details li {
 
 .count p {
 	padding-bottom: 10px;
-	border-bottom: 4px solid #fff;
+	&.bb {
+		border-bottom: 4px solid #fff;
+	}
+}
+#countdown {
+	padding-top: 20px;
+	font-size: 40px;
+	line-height: 1em;
+	@media all and (min-width: 50em) {
+		padding-top: 0;
+	}
 }
 
 .courtney {
@@ -461,15 +493,22 @@ blockquote {
 	background-repeat: repeat-x;
 	width: 100%;
 	height: 25px;
+	margin-top: 20px;
+	
 }
 
 
 .top {
 	max-width: 100%;
 	width:100%;
-	height:auto;
+	height:30vw;
 	margin: 0 auto;
 	text-align: center;
+	background: url(/assets/img/temp-top.png) center center no-repeat;
+	background-size: cover;
+	@media all and (min-width: 50em) {
+		height:40vw;
+	}
 }
 
 .top img {

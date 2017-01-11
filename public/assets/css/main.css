@@ -101,15 +101,23 @@ html, body {
 /*
 Colors:
 */
+/* rgb 209, 160, 84 */
+/* rgb 166, 42, 32 */
+/* rgb 191, 87, 0 */
+/* rgb 78,46,40 */
+/* rgb 140, 0, 26 */
 body {
   background-color: #f6f6f6; }
 
 .container {
-  width: 960px;
+  width: 100%;
   height: auto;
   margin: 0px auto;
   padding: 0px;
   clear: both; }
+  @media all and (min-width: 50em) {
+    .container {
+      width: 960px; } }
 
 /* columns */
 .onecol,
@@ -141,10 +149,15 @@ body {
   margin: 0 10px; }
 
 .fourcol {
-  width: 220px;
+  width: 100%;
   height: auto;
-  float: left;
-  margin: 0 10px; }
+  margin: 0; }
+  @media all and (min-width: 50em) {
+    .fourcol {
+      width: 220px;
+      height: auto;
+      float: left;
+      margin: 0 10px; } }
 
 .direction-header {
   width: 780px;
@@ -173,7 +186,7 @@ body {
   margin-bottom: 40px; }
 
 .fourcol-prop:hover {
-  background: #cbd500;
+  background: #BF5700;
   cursor: pointer; }
 
 .fivecol {
@@ -195,10 +208,16 @@ body {
   margin: 0 10px; }
 
 .fourcol_3 {
-  width: 700px;
+  width: 95%;
   height: auto;
-  float: left;
+  float: none;
   margin: 0 10px; }
+  @media all and (min-width: 50em) {
+    .fourcol_3 {
+      width: 700px;
+      height: auto;
+      float: left;
+      margin: 0 10px; } }
 
 .fivecol_3 {
   width: 556px;
@@ -268,16 +287,20 @@ img.prop:hover {
 #menu {
   margin: -43px auto 0 auto;
   text-align: center;
-  width: 635px;
+  width: 100%;
   height: auto;
-  background: #f6f6f6;
-  padding: 19px 0 19px 0;
+  padding: 19px 0;
   font-family: "vinyl",sans-serif;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 16px;
   line-height: 26px;
   text-transform: uppercase;
   letter-spacing: -.03em; }
+  @media all and (min-width: 50em) {
+    #menu {
+      background: #f6f6f6;
+      width: 50vw;
+      font-size: 26px; } }
 
 li#menunav {
   display: inline;
@@ -285,11 +308,10 @@ li#menunav {
   margin: 0 auto; }
 
 #menunav a {
-  color: #000;
+  color: #4E2E28;
   margin: 0 7px; }
-
-#menunav a:hover {
-  border-bottom: 5px solid #cbd500; }
+  #menunav a:hover {
+    border-bottom: 5px solid #D1A054; }
 
 body#home a#homenav,
 body#proposal a#proposalnav,
@@ -298,20 +320,20 @@ body#details a#detailsnav,
 body#registry a#registrynav,
 body#services a#servicesnav {
   color: #000;
-  border-bottom: 5px solid #cbd500; }
+  border-bottom: 5px solid #BF5700; }
 
 ::selection {
-  background: #cbd500; }
+  background: #BF5700; }
 
 ::-moz-selection {
-  background: #cbd500; }
+  background: #BF5700; }
 
 ::-webkit-selection {
-  background: #cbd500; }
+  background: #BF5700; }
 
 /*~~~~~~~ AND SO WE BEGIN ~~~~~~~*/
 p a, blockquote a {
-  color: #68BCA5;
+  color: #8C001A;
   background-color: none;
   text-decoration: none;
   -webkit-transition: color .2s ease-in;
@@ -320,7 +342,7 @@ p a, blockquote a {
   /* opera */ }
 
 p a:hover, blockquote a:hover {
-  color: #cbd500; }
+  color: #BF5700; }
 
 p {
   color: #666;
@@ -396,7 +418,7 @@ h2 a, h3 a {
   /* opera */ }
 
 h2 a:hover, h3 a:hover {
-  color: #cbd500; }
+  color: #BF5700; }
 
 ul.details li {
   list-style-type: disc;
@@ -409,7 +431,7 @@ ul.details li {
   margin: 0 0 15px -20px; }
 
 .count {
-  background: #68BCA5;
+  background: #4E2E28;
   padding: 12px 0 0 0;
   width: 100%;
   height: 151px;
@@ -419,7 +441,7 @@ ul.details li {
   /* opera */ }
 
 .count:hover {
-  background: #cbd500;
+  background: #BF5700;
   cursor: pointer; }
 
 .count h1, .count h3, .count p, .fourcol-prop h1, .fourcol-prop h3, .fourcol-prop p {
@@ -438,8 +460,17 @@ ul.details li {
   margin-top: -30px; }
 
 .count p {
-  padding-bottom: 10px;
-  border-bottom: 4px solid #fff; }
+  padding-bottom: 10px; }
+  .count p.bb {
+    border-bottom: 4px solid #fff; }
+
+#countdown {
+  padding-top: 20px;
+  font-size: 40px;
+  line-height: 1em; }
+  @media all and (min-width: 50em) {
+    #countdown {
+      padding-top: 0; } }
 
 .courtney {
   background-image: url("/images/courtney2.jpg");
@@ -492,14 +523,20 @@ blockquote {
   background-image: url("/assets/img/zag.png");
   background-repeat: repeat-x;
   width: 100%;
-  height: 25px; }
+  height: 25px;
+  margin-top: 20px; }
 
 .top {
   max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 30vw;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  background: url(/assets/img/temp-top.png) center center no-repeat;
+  background-size: cover; }
+  @media all and (min-width: 50em) {
+    .top {
+      height: 40vw; } }
 
 .top img {
   width: 100%;
