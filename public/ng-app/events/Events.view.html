@@ -1,38 +1,20 @@
-<article class="container">
-	<h1>Events</h1>
+<div class="container">
+	<h1 class="tc">RSVP Here!</h1>
 
 	<div ng-if="events && !events.length" class="alert alert-danger">
-		<i class="fa fa-warning"></i> No events available.
+		<i class="fa fa-diamond"></i> We&#39;re Married!
 	</div>
 
 	<div ng-if="events && events.length">
-		<!--<p class="lead">The following events are available to the public. Click on an event to view details.</p>
-
-		<div class="form-group form-inline">
-			<div class="input-group">
-				<span class="input-group-addon"><i class="fa fa-search"></i></span>
-				<input id="query" type="text" class="form-control" ng-model="query" placeholder="Search events" />
-				<span class="input-group-btn">
-					<button class="btn btn-default" ng-disabled="!query" ng-click="query=''">&times;</button>
-				</span>
-			</div>
-		</div>-->
-
-		<table class="eventTable table table-responsive">
-			<thead>
-				<tr>
-					<th>Date</th>
-					<th>Event</th>
-					<th>RSVP</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat="event in events | orderBy:'time.startDatetime' | filter:query" ng-class="{'danger': !event.rsvp, 'text-muted': !event.rsvp}" class="eventTable-row" ng-click="linkRow(event.url)">
-					<td>{{event.time.startDatetime | date:'shortDate'}}</td>
-					<td><strong>{{event.title}}</strong></td>
-					<td><strong ng-if="event.rsvp" class="text-success">Open</strong><em ng-if="!event.rsvp" class="text-danger">Closed</em></td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="onecol event_list" ng-repeat="event in events | orderBy:'time.startDatetime' | filter:query" ng-class="{'danger': !event.rsvp, 'text-muted': !event.rsvp}">
+			<div class="solid-bar"></div>
+			<h2 class="mtm"><i class="fa fa-calendar"></i> When:</h2>
+			<p>{{event.time.startDatetime | date:'longDate'}} &#64; {{event.time.startDatetime | date:'shortTime'}}</p>
+			<h2><i class="fa fa-map-marker"></i> Where:</h2>
+			<p>{{event.location}}</p>
+			<button ng-click="linkRow(event.url)" ng-if="event.rsvp" class="btn btn-default">RSVP Here<em ng-if="!event.rsvp" class="btn btn-error">Closed</em></button>
+			<!--<h2>RSVP:</h2><button ng-if="event.rsvp" class="text-success">Here<em ng-if="!event.rsvp" class="text-danger">Closed</em></button>-->
+		</div>
 	</div>
-</article>
+</div>
+<div class="bump"></div>

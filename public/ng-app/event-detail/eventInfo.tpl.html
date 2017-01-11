@@ -1,4 +1,4 @@
-<dl class="event-info">
+<!--<dl class="event-info">
 	<dt><i class="fa fa-calendar"></i> <strong>Date:</strong></dt>
 	<dd ng-class="{'text-danger': !event.upcoming}">{{event.time.startDatetime | date:'mediumDate'}}</dd>
 
@@ -7,4 +7,12 @@
 
 	<dt><i class="fa fa-map-marker"></i> <strong>Location:</strong></dt>
 	<dd>{{event.location}}</dd>
-</dl>
+</dl>-->
+
+<div class="onecol_modal event_list">
+	<div class="solid-bar"></div>
+	<h2 class="mtm"><i class="fa fa-calendar"></i> When:</h2>
+	<p>{{event.time.startDatetime | date:'longDate'}} &#64; {{event.time.startDatetime | date:'shortTime'}}</p>
+	<h2><i class="fa fa-map-marker"></i> Where:</h2>
+	<p>{{event.location}}</p>
+</div>

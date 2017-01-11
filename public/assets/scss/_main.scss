@@ -1,6 +1,8 @@
 @import 'partials/angular';
 @import 'partials/reset';
 @import 'partials/fonts';
+@import 'partials/tools';
+@import 'partials/modal';
 
 /*
 Colors:
@@ -44,10 +46,24 @@ body {
 }
 
 .onecol {
-    width: 940px;
+	width: 95%;
     height: auto;
-    float: left;
+    float: none;
     margin: 0 10px;
+	@media all and (min-width: 50em) {
+		width: 940px;
+		height: auto;
+		float: left;
+		margin: 0 10px;
+	}
+	&_modal {
+		@media all and (min-width: 50em) {
+		width: 100%;
+		height: auto;
+		float: left;
+		margin: 0 10px;
+	}
+	}
 }
 
 .twocol {
@@ -149,6 +165,7 @@ body {
 		margin: 0 10px;
 	}
 }
+
 
 .fivecol_3 {
     width: 556px;
@@ -335,7 +352,7 @@ h2 {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 30px;
-	color: #68BCA5;
+	color: $bonfire;
 	line-height: 36px;
 	text-transform: uppercase;
 	letter-spacing: -.03em;
@@ -657,4 +674,174 @@ input.text, input.search, textarea.textarea {
 			padding-top: 15px;
 		}
 	}
+}
+
+.event_list {
+	h2 {
+		float: left;
+		margin: 0 20px 0 10px;
+	}
+}
+
+.solid-bar {
+	width: 90%;
+	margin: 10px auto;
+	height: 5px;
+	background: $honey_gold;
+	@media all and (min-width: 50em) {
+		width: 100%;
+	}
+}
+
+.btn {
+	cursor: pointer;
+	color: $bonfire;
+	font-family: "rooney-web",serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	line-height: 1em;
+	color: #666;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #fff;
+	background-color: rgba(255,255,255, 0);
+	box-shadow: 0 0 0 0 $bonfire inset, 0.3em 0.2em 0 0 #bbb;
+	border: 0.2em solid $bonfire;
+	padding: 0.8em;
+	text-align: center;
+	transition: 0.25s box-shadow, 0.25s transform;
+	margin-left: 10px;
+	width: 92%;
+	margin-bottom: 10px;
+	&-success {
+		border: 0.2em solid $honey_gold;
+		@media all and (min-width: 50em) {
+			width: 100%;
+			margin-left: 0;
+		}
+		&:hover {
+			box-shadow: 0 4em 0 0 $honey_gold inset, 0em 0em 0 0 #bbb;
+			transform: translate(0.3em, 0.2em);
+			color: #666;
+		}
+	}
+	&-default {
+		border: 0.2em solid $bonfire;
+		@media all and (min-width: 50em) {
+			width: 50%;
+			margin-left: 235px;
+		}
+		&:hover {
+			box-shadow: 0 4em 0 0 $bonfire inset, 0em 0em 0 0 #bbb;
+			transform: translate(0.3em, 0.2em);
+			color: #fff;
+		}
+	}
+}
+
+label {
+	color: #666;
+    font-family: "rooney-web",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 80%;
+  height: calc(4em + 1px);
+  margin: 0 0 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background: #fff;
+  resize: none;
+  outline: none;
+}
+input[type="text"][required]:focus {
+  border-color: $honey_gold;
+}
+input[type="text"][required]:focus + label[placeholder]:before {
+  color: $honey_gold;
+}
+input[type="text"][required]:focus + label[placeholder]:before,
+input[type="text"][required]:valid + label[placeholder]:before {
+  transition-duration: .2s;
+  transform: translate(0, -1.5em) scale(0.9, 0.9);
+}
+input[type="text"][required]:invalid + label[placeholder][alt]:before {
+  content: attr(alt);
+}
+input[type="text"][required] + label[placeholder] {
+  display: block;
+  pointer-events: none;
+  line-height: 1em;
+  margin-top: calc(-3em - 2px);
+  margin-bottom: calc((3em - 1em) + 2px);
+}
+
+input[type="text"][required] + label[placeholder]:before {
+  content: attr(placeholder);
+  display: inline-block;
+  margin: 0 calc(1em + 2px);
+  padding: 0 2px;
+  color: #898989;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="number"] {
+  box-sizing: border-box;
+  width: 53%;
+  height: calc(4em + 1px);
+  margin: 0 0 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background: #fff;
+  resize: none;
+  outline: none;
+}
+input[type="number"][required]:focus {
+  border-color: $honey_gold;
+}
+input[type="number"][required]:focus + label[placeholder]:before {
+  color: $honey_gold;
+}
+input[type="number"][required]:focus + label[placeholder]:before,
+input[type="number"][required]:valid + label[placeholder]:before {
+  transition-duration: .2s;
+  transform: translate(0, -1.5em) scale(0.9, 0.9);
+}
+input[type="number"][required]:invalid + label[placeholder][alt]:before {
+  content: attr(alt);
+}
+input[type="number"][required] + label[placeholder] {
+  display: block;
+  pointer-events: none;
+  line-height: 1em;
+  margin-top: calc(-3em - 2px);
+  margin-bottom: calc((3em - 1em) + 2px);
+}
+
+input[type="number"][required] + label[placeholder]:before {
+  content: attr(placeholder);
+  display: inline-block;
+  margin: 0 calc(1em + 2px);
+  padding: 0 2px;
+  color: #898989;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
 }

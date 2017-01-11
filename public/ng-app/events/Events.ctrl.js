@@ -5,6 +5,7 @@ angular
 		'eventData',
 		'$location',
 		function($scope, eventData, $location) {
+			
 			// get event data and add URL / show public
 			eventData.get().then(function(data) {
 				$scope.events = [];
