@@ -137,10 +137,14 @@ body {
   margin: 0 10px; }
 
 .twocol {
-  width: 460px;
+  width: 100%;
   height: auto;
-  float: left;
-  margin: 0 10px; }
+  margin: 0 auto; }
+  @media all and (min-width: 50em) {
+    .twocol {
+      width: 460px;
+      float: left;
+      margin: 0 10px; } }
 
 .threecol {
   width: 300px;
@@ -364,10 +368,14 @@ h1 {
   letter-spacing: -.03em; }
 
 h1.profile {
-  width: 100%;
+  width: 95%;
   margin: 15px 0;
   font-size: 28px;
-  line-break: 28px; }
+  line-break: 28px;
+  padding-left: 10px; }
+  @media all and (min-width: 50em) {
+    h1.profile {
+      width: 100%; } }
 
 h2 {
   font-family: "vinyl",sans-serif;
@@ -606,6 +614,18 @@ blockquote {
 .footer img {
   margin-top: 10px; }
 
+footer {
+  width: 100%;
+  height: 45px;
+  margin: 0 auto;
+  text-align: center;
+  background: #4E2E28; }
+  footer p {
+    color: #fff;
+    padding-top: 10px;
+    font-size: 13px;
+    margin: 0; }
+
 input.text, input.search, textarea.textarea {
   border: none;
   -moz-border-radius-bottomright: 3px 3px;
@@ -621,3 +641,19 @@ input.text, input.search, textarea.textarea {
 
 .nomar {
   margin: 0; }
+
+.her p {
+  padding: 0 10px; }
+
+@media all and (max-width: 50em) {
+  .her img {
+    width: 100%;
+    padding-top: 15px; } }
+
+.him p {
+  padding: 0 10px; }
+
+@media all and (max-width: 50em) {
+  .him img {
+    width: 100%;
+    padding-top: 15px; } }
