@@ -1,7 +1,7 @@
 angular
 	.module('myApp')
-	.directive('rsvpForm', [
-		function() {
+	.directive('rsvpForm', ['$http',
+		function($http) {
 
 			// rsvpForm controller function
 			function rsvpCtrl($scope) {
@@ -33,6 +33,19 @@ angular
 					window.open(link, 'EmailRSVP', windowFeatures);
 
 					$scope.showForm = false;
+				};
+
+				// form submit with process.php
+				$scope.processForm = function() {
+					$http({
+						method : 'POST',
+						url    : './process.php',
+						data   : $.param($scope.guest),
+						headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+					})
+					.success(function(data) {
+						$scope.showForm = false;
+					});
 				};
 
 				// close the RSVP modal window
