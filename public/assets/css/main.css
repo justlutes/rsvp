@@ -1121,6 +1121,9 @@ input[type="number"][required] + label[placeholder]:before {
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out; }
+    @media all and (min-width: 50em) {
+      .switch-field label {
+        width: 44%; } }
     .switch-field label:hover {
       cursor: pointer; }
     .switch-field label:first-of-type {
