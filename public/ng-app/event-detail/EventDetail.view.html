@@ -3,11 +3,7 @@
 
 		<div ng-include="'/ng-app/event-detail/eventInfo.tpl.html'"></div>
 
-		<div ng-bind-html="event.description" class="onecol"></div>
-		<div class="onecol">
-			<button ng-if="event.rsvp && event.upcoming" class="btn btn-default" ng-click="launchModal()">RSVP for this event</button>
-			<div ng-if="!event.rsvp || !event.upcoming" class="alert alert-danger"><i class="fa fa-warning"></i> {{!event.upcoming ? 'This event has ended.' : 'RSVP is closed.'}}</div>
-		</div>
+		<!--<div ng-bind-html="event.description" class="onecol"></div>-->
 
 		<rsvp-form event="event" show-form="showForm"></rsvp-form>
 </div>

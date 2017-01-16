@@ -98,12 +98,22 @@ html, body {
   font-weight: 500;
   font-style: italic; }
 
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family: "molesk";
+  src: url("molesk.eot?") format("eot"), url("molesk.woff") format("woff"), url("molesk.ttf") format("truetype"), url("molesk.svg#molesk") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*~~~~~~~~~~~ Tools ~~~~~~~~~~~~~~*/
 .tc {
   text-align: center; }
 
 .mtm {
   margin-top: 20px; }
+
+.mbm {
+  margin-bottom: 20px; }
 
 @media all and (min-width: 50em) {
   .oneoftwo {
@@ -904,8 +914,7 @@ input.text, input.search, textarea.textarea {
   margin: 0 20px 0 10px; }
 
 .event_list__flex p {
-  font-size: 22px;
-  padding-top: 25px; }
+  font-size: 22px; }
 
 .event_list h2 {
   float: left;
@@ -1074,7 +1083,6 @@ input[type="number"][required] + label[placeholder]:before {
   -webkit-flex-flow: row wrap; }
 
 .flex_item {
-  background: #D1A054;
   padding: 5px;
   width: 46%;
   height: 150px;
@@ -1084,10 +1092,31 @@ input[type="number"][required] + label[placeholder]:before {
   font-weight: bold;
   font-size: 3em;
   text-align: center; }
+  .flex_item:last-of-type {
+    flex-grow: 2; }
+  .flex_item h3 {
+    margin: 20px 0;
+    color: #4E2E28; }
 
 .aside {
-  margin-left: 5px;
-  background-image: url("/assets/img/rsvp.png"); }
+  cursor: pointer;
+  margin-left: 5px; }
+  .aside p {
+    font-family: "molesk",sans-serif;
+    color: #D1A054;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 50px;
+    padding-top: 15px; }
+    @media all and (min-width: 50em) {
+      .aside p {
+        padding-top: 45px; } }
+    .aside p:hover {
+      color: #fff;
+      transition: 0.3s ease-in-out; }
+  .aside:hover {
+    background-color: #A62A20;
+    transition: 0.3s ease-in-out; }
 
 .switch-field {
   overflow: hidden; }

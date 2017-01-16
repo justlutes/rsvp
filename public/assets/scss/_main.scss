@@ -724,7 +724,6 @@ input.text, input.search, textarea.textarea {
         }
         p {
             font-size: 22px;
-            padding-top: 25px;
         }
     }
 	h2 {
@@ -910,22 +909,48 @@ input[type="number"][required] + label[placeholder]:before {
 }
 
 .flex_item {
-  background: $honey_gold;
-  padding: 5px;
-  width: 46%;
-  height: 150px;
-  margin-top: 5px;
-  
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+	padding: 5px;
+	width: 46%;
+	height: 150px;
+	margin-top: 5px;
+	
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+	&:last-of-type {
+		flex-grow: 2;
+	}
+	h3 {
+		margin: 20px 0;
+		color: $chocolate;
+	}
 }
 
 .aside {
+	cursor: pointer;
     margin-left: 5px;
-    background-image: url('/assets/img/rsvp.png');
+	p {
+		font-family: "molesk",sans-serif;
+		color: $honey_gold;
+		text-transform: uppercase;
+		font-size: 45px;
+		line-height: 50px;
+		padding-top: 15px;
+		@media all and (min-width: 50em) {
+			padding-top: 45px;
+		}
+		&:hover {
+			color: #fff;
+			transition: 0.3s ease-in-out;
+		}
+	}
+	&:hover {
+		background-color: $bonfire;
+		transition: 0.3s ease-in-out;
+	}
+	//background: url(/assets/img/rsvp.png) center center no-repeat;
 }
 
 .switch-field {

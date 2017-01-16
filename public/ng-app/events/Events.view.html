@@ -9,17 +9,10 @@
 		<div class="onecol event_list__flex" ng-repeat="event in events | orderBy:'time.startDatetime' | filter:query" ng-class="{'danger': !event.rsvp, 'text-muted': !event.rsvp}">
 			<div class="solid-bar"></div>
 			<ul class="flex_container">
-				<li class="flex_item"><h2 class="mtm"><i class="fa fa-calendar"></i> When:</h2><p>{{event.time.startDatetime | date:'longDate'}} &#64; {{event.time.startDatetime | date:'shortTime'}}</p></li>
+				<li class="flex_item"><h3><i class="fa fa-calendar"></i> Where:</h3><p>{{event.location}}</p></li>
 				<li ng-click="linkRow(event.url)" class="flex_item aside"></li>
-				<li class="flex_item"><h2><i class="fa fa-map-marker"></i> Where:</h2><p>{{event.location}}</p></li>
+				<li class="flex_item"><h3><i class="fa fa-map-marker"></i> When:</h3><p>{{event.time.startDatetime | date:'EEEE'}}, {{event.time.startDatetime | date:'longDate'}}</p><p>{{event.time.startDatetime | date:'shortTime'}}-{{event.time.endDatetime | date:'shortTime'}}</p></li>
 			</ul>
-
-			<!--<h2 class="mtm"><i class="fa fa-calendar"></i> When:</h2>
-			<p>{{event.time.startDatetime | date:'longDate'}} &#64; {{event.time.startDatetime | date:'shortTime'}}</p>
-			<h2><i class="fa fa-map-marker"></i> Where:</h2>
-			<p>{{event.location}}</p>
-			<button ng-click="linkRow(event.url)" ng-if="event.rsvp" class="btn btn-default">RSVP Here<em ng-if="!event.rsvp" class="btn btn-error">Closed</em></button>-->
-			<!--<h2>RSVP:</h2><button ng-if="event.rsvp" class="text-success">Here<em ng-if="!event.rsvp" class="text-danger">Closed</em></button>-->
 		</div>
 	</div>
 </div>

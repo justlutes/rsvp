@@ -1,18 +1,16 @@
-<!--<dl class="event-info">
-	<dt><i class="fa fa-calendar"></i> <strong>Date:</strong></dt>
-	<dd ng-class="{'text-danger': !event.upcoming}">{{event.time.startDatetime | date:'mediumDate'}}</dd>
-
-	<dt><i class="fa fa-clock-o"></i> <strong>Time:</strong></dt>
-	<dd ng-class="{'text-danger': !event.upcoming}">{{event.time.startDatetime | date:'shortTime'}} - {{event.time.endDatetime | date:'shortTime'}}</dd>
-
-	<dt><i class="fa fa-map-marker"></i> <strong>Location:</strong></dt>
-	<dd>{{event.location}}</dd>
-</dl>-->
-
-<div class="onecol_modal event_list">
+<div class="onecol event_list__flex">
 	<div class="solid-bar"></div>
-	<h2 class="mtm"><i class="fa fa-calendar"></i> When:</h2>
-	<p>{{event.time.startDatetime | date:'longDate'}} &#64; {{event.time.startDatetime | date:'shortTime'}}</p>
-	<h2><i class="fa fa-map-marker"></i> Where:</h2>
-	<p>{{event.location}}</p>
+	<ul class="flex_container">
+		<li class="flex_item">
+			<h3><i class="fa fa-calendar"></i> Where:</h3>
+			<p>{{event.location}}</p>
+		</li>
+		<li ng-if="event.rsvp && event.upcoming" ng-click="launchModal()" class="flex_item aside"><p>rsvp Here</p></li>
+		<li ng-if="!event.rsvp || !event.upcoming" class="flex_item aside__closed"></li>
+		<li class="flex_item">
+			<h3><i class="fa fa-map-marker"></i> When:</h3>
+			<p>{{event.time.startDatetime | date:'EEEE'}}, {{event.time.startDatetime | date:'longDate'}}</p>
+			<p>{{event.time.startDatetime | date:'shortTime'}}-{{event.time.endDatetime | date:'shortTime'}}</p>
+		</li>
+	</ul>
 </div>
