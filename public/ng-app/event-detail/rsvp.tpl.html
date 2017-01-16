@@ -4,42 +4,31 @@
 
 			<div class="modal-header">
 				<a type="button" class="close" ng-click="closeModal()" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></a>
-				<h4 class="modal-title">RSVP for {{event.title}}</h4>
+				<h4 class="modal-title">RSVP to {{event.title}}</h4>
 
-				<div ng-include="'/ng-app/event-detail/eventInfo.tpl.html'"></div>
+				<div ng-include="'/ng-app/event-detail/eventInfoModal.tpl.html'"></div>
 			</div>
 
 			<form name="rsvpForm" novalidate>
 				<div class="modal-body">
-					<div class="form-group form-inline">
-						<md-autocomplete
-							ng-disabled="ctrl.isDisabled"
-							md-no-cache="ctrl.noCache"
-							md-selected-item="ctrl.selectedItem"
-							md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
-							md-search-text="ctrl.searchText"
-							md-selected-item-change="ctrl.selectedItemChange(item)"
-							md-items="item in ctrl.querySearch(ctrl.searchText)"
-							md-item-text="item.display"
-							md-min-length="0"
-							placeholder="Name">
-							<md-item-template>
-								<span md-highlight-text="ctrl.searchText" md-hightlight-flags="^i">{{item.display}}</span>
-							</md-item-template>
-						<label for="name">Name:</label>
-						<input id="name" type="text" class="form-control" placeholder="Name" name="name" ng-model="guest.name" required>
+					<div class="row">
+						<div class="form-group form-inline oneoftwo">
+							<label for="name">Name:</label>
+							<input id="name" type="text" class="form-control" placeholder="Name" name="name" ng-model="guest.name" required>
 
-						<div ng-if="rsvpForm.name.$dirty && rsvpForm.name.$invalid" ng-messages="rsvpForm.name.$error" class="text-danger">
-							<span ng-message="required">Name is required</span>
+							<div ng-if="rsvpForm.name.$dirty && rsvpForm.name.$invalid" ng-messages="rsvpForm.name.$error" class="text-danger">
+								<span ng-message="required">Name is required</span>
+							</div>
 						</div>
-					</div>
 
-					<div class="form-group">
-						<label>Attending:</label>
-						<label class="radio-inline"><input type="radio" name="attending" ng-model="guest.attending" ng-value="true" required>
-							Yes</label>
-						<label class="radio-inline"><input type="radio" name="attending" ng-model="guest.attending" ng-value="false">
-							No</label>
+						<div class="form-group oneoftwo">
+							<div class="switch-field">
+								<input type="radio" name="attending" id="switch_left" ng-model="guest.attending" ng-value="true" required checked/>
+								<label for="switch_left">Going</label>
+								<input type="radio" name="attending" ng-model="guest.attending" ng-value="false" id="switch_right"/>
+								<label for="switch_right">Can&#39;t Make It</label>
+							</div>
+						</div>
 					</div>
 
 					<div class="form-group form-inline" ng-show="guest.attending">

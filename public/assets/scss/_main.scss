@@ -376,7 +376,6 @@ h4 {
 	font-size: 20px;
 	color: #000;
 	line-height: 30px;
-	text-transform: uppercase;
 	letter-spacing: -.03em;
 }
 
@@ -705,6 +704,19 @@ input.text, input.search, textarea.textarea {
 }
 
 .event_list {
+	&__modal {
+		text-align: center;
+		h4 {
+			margin: 0 20px 0 10px;
+			padding: 20px 0;
+			i {
+				margin-right: 5px;
+			}
+		}
+		p {
+			margin: 0;
+		}
+	}
     &__flex {
         h2 {
             float: none;
@@ -724,7 +736,7 @@ input.text, input.search, textarea.textarea {
 .solid-bar {
 	width: 90%;
 	margin: 10px auto;
-	height: 5px;
+	height: 1px;
 	background: $honey_gold;
 	@media all and (min-width: 50em) {
 		width: 100%;
@@ -751,8 +763,7 @@ input.text, input.search, textarea.textarea {
 	padding: 0.8em;
 	text-align: center;
 	transition: 0.25s box-shadow, 0.25s transform;
-	margin-left: 10px;
-	width: 92%;
+	width: 100%;
 	margin-bottom: 10px;
 	&-success {
 		border: 0.2em solid $honey_gold;
@@ -792,7 +803,7 @@ label {
 
 input[type="text"] {
   box-sizing: border-box;
-  width: 80%;
+  width: 100%;
   height: calc(4em + 1px);
   margin: 0 0 1em;
   padding: 1em;
@@ -915,4 +926,51 @@ input[type="number"][required] + label[placeholder]:before {
 .aside {
     margin-left: 5px;
     background-image: url('/assets/img/rsvp.png');
+}
+
+.switch-field {
+	overflow: hidden;
+	input {
+		display: none;
+		&:checked + label {
+			background-color: #A5DC86;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			color: #fff;
+			&:last-of-type {
+				background-color: #A62A20;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				color: #fff;
+			}
+		}
+	}
+	label {
+		display: inline-block;
+		width: 40%;
+		background-color: #e4e4e4;
+		color: rgba(0, 0, 0, 0.6);
+		font-size: 14px;
+		font-weight: normal;
+		text-align: center;
+		text-shadow: none;
+		padding: 6px 14px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition:    all 0.1s ease-in-out;
+		-ms-transition:     all 0.1s ease-in-out;
+		-o-transition:      all 0.1s ease-in-out;
+		transition:         all 0.1s ease-in-out;
+		&:hover {
+			cursor: pointer;
+		}
+		&:first-of-type {
+			border-radius: 4px 0 0 4px;
+		}
+		&:last-of-type {
+			border-radius: 0 4px 4px 0;
+		}
+	}
 }

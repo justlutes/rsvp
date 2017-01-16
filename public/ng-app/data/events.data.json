@@ -1,15 +1,15 @@
 {
   "wedding": {
-    "title": "Wedding",
+    "title": "Our Wedding",
     "date": "February 3, 2018",
     "time": {
       "start": "17:00",
-      "end": "20:00"
+      "end": "22:00"
     },
     "description": "<p>A very special occasion that I'd like to celebrate with you!</p><p>Please come and be part of this special event with me.</p>",
     "public": true,
     "rsvp": true,
-    "location": "TBD",
+    "location": "Luxmore Grande Estate",
     "contact": "klutes90@gmail.com"
   }
 }

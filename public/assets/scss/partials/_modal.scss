@@ -79,6 +79,11 @@
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
+  text-align: center;
+  margin-left: 25px;
+  @media all and (min-width: 50em) {
+			margin-left: 30px;
+		}
 }
 .modal-body {
   position: relative;
