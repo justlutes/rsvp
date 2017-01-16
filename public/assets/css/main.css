@@ -839,15 +839,17 @@ input.text, input.search, textarea.textarea {
   padding: 0 10px; }
 
 .her img {
+  width: 100%;
   transition: opacity .2s ease-in;
   -webkit-transition: opacity .2s ease-in;
   /*safari and chrome */
   -o-transition: opacity .2s ease-in;
   /* opera */ }
-  .her img:hover {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+  @media all and (min-width: 50em) {
+    .her img:hover {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
   @media all and (min-width: 50em) {
     .her img {
       width: 100%; } }
@@ -861,18 +863,28 @@ input.text, input.search, textarea.textarea {
   padding: 0 10px; }
 
 .him img {
+  width: 100%;
   transition: opacity .2s ease-in;
   -webkit-transition: opacity .2s ease-in;
   /*safari and chrome */
   -o-transition: opacity .2s ease-in;
   /* opera */ }
-  .him img:hover {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+  @media all and (min-width: 50em) {
+    .him img:hover {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
   @media all and (min-width: 50em) {
     .him img {
       width: 100%; } }
+
+.event_list__flex h2 {
+  float: none;
+  margin: 0 20px 0 10px; }
+
+.event_list__flex p {
+  font-size: 22px;
+  padding-top: 25px; }
 
 .event_list h2 {
   float: left;
@@ -1029,3 +1041,30 @@ input[type="number"][required] + label[placeholder]:before {
   background-size: 100% 5px;
   background-repeat: no-repeat;
   background-position: center; }
+
+.flex_container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap; }
+
+.flex_item {
+  background: #D1A054;
+  padding: 5px;
+  width: 46%;
+  height: 150px;
+  margin-top: 5px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center; }
+
+.aside {
+  margin-left: 5px;
+  background-image: url("/assets/img/rsvp.png"); }
