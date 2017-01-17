@@ -1,0 +1,28 @@
+<div class="container__proposal">
+    <form name="registryForm" action="/charge.php" method="POST">
+    <input type="hidden" name="item1" id="item1" value="item1"/>
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_sa0wFaYe9Qvra5z0uTIdHUKk"
+    data-amount="999"
+    data-name="Kyle &amp; Chelsea"
+    data-description="Widget"
+    data-zip-code="true"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
+</form>
+<form name="registryForm2" action="/charge.php" method="POST">
+<input type="hidden" name="item2" id="item2" value="item2" />
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_sa0wFaYe9Qvra5z0uTIdHUKk"
+    data-amount="5000"
+    data-name="Kyle &amp; Chelsea"
+    data-description="Widget"
+    data-zip-code="true"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
+</form>
+</div>
