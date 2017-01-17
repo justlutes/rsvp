@@ -316,6 +316,16 @@ body {
   @media all and (min-width: 50em) {
     .container {
       width: 960px; } }
+  .container__proposal {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    padding: 0px;
+    clear: both; }
+    @media all and (min-width: 50em) {
+      .container__proposal {
+        width: 100%; } }
 
 /* columns */
 .onecol,
@@ -458,10 +468,14 @@ body {
   margin: 0 10px; }
 
 .slidescol {
-  width: 800px;
-  height: auto;
-  float: left;
-  margin: 0 10px; }
+  width: 90%;
+  margin: 0 auto; }
+  @media all and (min-width: 50em) {
+    .slidescol {
+      width: 800px;
+      height: auto;
+      margin: 0 10px;
+      margin-left: 18.4%; } }
 
 .rule {
   width: 100%;
@@ -762,12 +776,31 @@ blockquote {
 
 /*~~~~~~~~~~~ Slides ~~~~~~~~~~~~~~*/
 #slides {
-  float: left;
-  width: auto; }
+  display: none; }
+  #slides .slidesjs-navigation {
+    margin-top: 3px; }
+  #slides .slidesjs-previous {
+    margin-right: 5px;
+    float: left; }
+  #slides .slidesjs-next {
+    margin-right: 5px;
+    float: left; }
 
 .slides_container {
-  width: 800px;
-  float: left; }
+  width: 100%; }
+  @media all and (min-width: 50em) {
+    .slides_container {
+      width: 800px;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      display: block; } }
+
+.slides_control {
+  position: relative;
+  width: 80%;
+  height: auto;
+  left: -15%; }
 
 /*
 	Each slide
@@ -785,33 +818,31 @@ blockquote {
 /*
 	Pagination
 */
-.pagination {
+.slidesjs-pagination {
+  display: inline-block;
   width: auto;
   padding: 0; }
-
-.pagination li {
-  color: #666;
-  font-family: "rooney-web",serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  width: 23px;
-  height: 23px;
-  margin: 10px 10px 0 0;
-  float: left; }
-
-.pagination li a {
-  height: auto;
-  float: left;
-  overflow: visible;
-  color: #cecece;
-  background-color: #cecece;
-  width: 23px;
-  height: 23px; }
-
-.pagination li.current a {
-  background-color: #68BCA5;
-  color: #68BCA5; }
+  .slidesjs-pagination li {
+    color: #666;
+    font-family: "rooney-web",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    width: 23px;
+    height: 23px;
+    margin: 10px 10px 0 0;
+    float: left; }
+    .slidesjs-pagination li a {
+      height: auto;
+      float: left;
+      overflow: visible;
+      color: #cecece;
+      background-color: #cecece;
+      width: 23px;
+      height: 23px; }
+      .slidesjs-pagination li a.active {
+        background-color: #D1A054;
+        color: #D1A054; }
 
 .footer {
   width: 100%;

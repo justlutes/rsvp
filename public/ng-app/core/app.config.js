@@ -17,6 +17,18 @@ angular
 					templateUrl: 'ng-app/events/Events.view.html',
 					controller: 'EventsCtrl'
 				})
+				.when('/proposal', {
+					templateUrl: 'ng-app/proposal/Proposal.view.html',
+					controller: 'ProposalCtrl'
+				})
+				.when('/details', {
+					templateUrl: 'ng-app/details/Details.view.html',
+					controller: 'DetailsCtrl'
+				})
+				.when('/registry', {
+					templateUrl: 'ng-app/registry/Registry.view.html',
+					controller: 'RegistryCtrl'
+				})
 				.when('/event/:eid', {
 					templateUrl: 'ng-app/event-detail/EventDetail.view.html',
 					controller: 'EventDetailCtrl'

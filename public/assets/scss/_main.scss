@@ -31,6 +31,17 @@ body {
 	@media all and (min-width: 50em) {
 		width: 960px;
 	}
+	&__proposal {
+		display: inline-block;
+		width:100%;
+		height:auto;
+		margin:0px auto;
+		padding:0px;
+		clear:both;
+		@media all and (min-width: 50em) {
+			width: 100%;
+		}
+	}
 }
 
 /* columns */
@@ -196,10 +207,14 @@ body {
 }
 
 .slidescol {
-    width: 800px;
-    height: auto;
-    float: left;
-    margin: 0 10px;
+	width: 90%;
+	margin: 0 auto;
+	@media all and (min-width: 50em) {
+		width: 800px;
+		height: auto;
+		margin: 0 10px;
+		margin-left: 18.4%;
+	}
 }
 
 .rule {
@@ -547,13 +562,38 @@ blockquote {
 /*~~~~~~~~~~~ Slides ~~~~~~~~~~~~~~*/
 
 #slides {
-	float: left;
-	width:auto;
+	display: none;
+	.slidesjs {
+		&-navigation {
+			margin-top: 3px;
+		}
+		&-previous {
+			margin-right: 5px;
+			float: left;
+		}
+		&-next {
+			margin-right: 5px;
+			float: left;
+		}
+	}
 }
 
 .slides_container {
-	width:800px;
-	float: left;
+	width: 100%;
+	@media all and (min-width: 50em) {
+		width:800px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+		display: block;
+	}
+}
+
+.slides_control {
+	position: relative;
+	width: 80%;
+	height: auto;
+	left: -15%;
 }
 
 /*
@@ -575,36 +615,34 @@ blockquote {
 	Pagination
 */
 
-.pagination {
+.slidesjs-pagination {
+	display: inline-block;
 	width:auto;
-	padding: 0;	
-}
-
-.pagination li {
-	color: #666;
-	font-family: "rooney-web",serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 10px;
-	width:23px;
-	height:23px;
-	margin:10px 10px 0 0;
-	float: left;	
-}
-
-.pagination li a {
-	height:auto;
-	float:left;
-	overflow:visible;
-	color:#cecece;
-	background-color: #cecece;	
-	width:23px;
-	height:23px;
-}
-
-.pagination li.current a {
-	background-color: #68BCA5;
-	color:#68BCA5;
+	padding: 0;
+	li {
+		color: #666;
+		font-family: "rooney-web",serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 10px;
+		width:23px;
+		height:23px;
+		margin:10px 10px 0 0;
+		float: left;
+		a {
+			height:auto;
+			float:left;
+			overflow:visible;
+			color:#cecece;
+			background-color: #cecece;	
+			width:23px;
+			height:23px;
+			&.active {
+				background-color: $honey_gold;
+				color: $honey_gold;
+			}
+		}	
+	}	
 }
 
 .footer {
@@ -1002,3 +1040,4 @@ input[type="number"][required] + label[placeholder]:before {
 		}
 	}
 }
+

@@ -14,7 +14,8 @@
   "scripts": {
     "start": "node ng-rsvp.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss public/assets/scss/_main.scss public/assets/css/main.css"
+    "build-css": "node-sass --include-path scss public/assets/scss/_main.scss public/assets/css/main.css",
+    "clean-css": "cleancss -o public/assets/css/main-min.css public/assets/css/main.css"
   },
   "repository": {
     "type": "git",
