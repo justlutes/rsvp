@@ -29,3 +29,9 @@ function CountBack(myDiv, secs) {
 		document.getElementById(myDiv).innerHTML = "It is Over";
 	}
 }
+
+$('.toggle').on('click', function() {
+	$('.menu').toggleClass('expanded');
+	$('span').toggleClass('hidden');
+	$('.container__mobile_nav, .toggle').toggleClass('close');
+});
