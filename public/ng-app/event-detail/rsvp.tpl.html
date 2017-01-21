@@ -17,34 +17,32 @@
 							<input id="name" type="text" class="form-control" placeholder="Name" name="name" ng-model="guest.name" required>
 
 							<div ng-if="rsvpForm.name.$dirty && rsvpForm.name.$invalid" ng-messages="rsvpForm.name.$error" class="text-danger">
-								<span ng-message="required">Name is required</span>
+								<span ng-message="required">Please Enter Your First &amp; Last Name</span>
 							</div>
 						</div>
 
 						<div class="form-group">
 							<div class="switch-field">
 								<input type="radio" name="attending" id="switch_left" ng-model="guest.attending" ng-value="true" required checked/>
-								<label for="switch_left">Going</label>
+								<label for="switch_left">Attending</label>
 								<input type="radio" name="attending" ng-model="guest.attending" ng-value="false" id="switch_right"/>
-								<label for="switch_right">Can&#39;t Make It</label>
+								<label for="switch_right">Not Attending</label>
 							</div>
 						</div>
 					</div>
 
-					<div class="form-group form-inline" ng-show="guest.attending">
-						<label for="guests">Number of Guests:</label>
-						<input id="guests" name="guests" type="number" class="form-control" min="1" max="2" ng-model="guest.guests" ng-pattern="/^[1-2]$/"
-							ng-required="guest.attending">
-
-						<div ng-if="rsvpForm.guests.$dirty && rsvpForm.guests.$invalid" ng-messages="rsvpForm.guests.$error" class="text-danger">
-							<span ng-message="required"># of guests required if attending</span>
-							<span ng-message="pattern">Enter a number from 1-2</span>
+					<div class="form-group form-inline" ng-repeat="guestPlus in guests" ng-show="guest.name.toLowerCase().indexOf(guestPlus.name) == 0 && guest.attending">
+						<label for"guests">Your Guest: <strong>{{guestPlus.plusone}}</strong></label>
+						<div class="switch-field mtm">
+								<input type="radio" name="plusOne" id="switch_left_plus" ng-model="guest.plusOne" ng-value="true" required checked/>
+								<label for="switch_left_plus">Attending</label>
+								<input type="radio" name="plusOne" ng-model="guest.plusOne" ng-value="false" id="switch_right_plus"/>
+								<label for="switch_right_plus">Not Attending</label>
+							</div>
 						</div>
 					</div>
-				</div>
 
 				<div class="modal-footer">
-					<!--<button class="btn btn-default" ng-click="closeModal();">Cancel</button>-->
 					<button class="btn btn-success" ng-click="processForm();" ng-disabled="rsvpForm.$invalid"><i class="fa fa-envelope-o"></i> Email RSVP</button>
 				</div>
 			</form>

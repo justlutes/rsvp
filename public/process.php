@@ -39,12 +39,9 @@ if(isset($_POST['name'])) {
      
     $name = $_POST['name'];
     $attending = $_POST['attending'];
-    $guests = $_POST['guests'];
+    $plusOne = $_POST['plusOne'];
  
- 
-    $email_message = "Form details below.\n\n";
- 
-     
+    $email_message = "Rsvp details below.\n\n";
  
     function clean_string($string) {
  
@@ -54,15 +51,12 @@ if(isset($_POST['name'])) {
  
     }
  
-     
- 
     $email_message .= "Name: ".clean_string($name)."\n";
  
     $email_message .= "Attending: ".clean_string($attending)."\n";
  
-    $email_message .= "Number of Guests: ".clean_string($guests)."\n";
+    $email_message .= "Plus One Attending: ".clean_string($plusOne)."\n";
 
- 
 	// create email headers
 	 
 	$headers = 'From: '.$email."\r\n" . 'Reply-To: '.$email."\r\n" . 'X-Mailer: PHP/' . phpversion();

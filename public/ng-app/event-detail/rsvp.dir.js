@@ -7,6 +7,13 @@ angular
 			function rsvpCtrl($scope) {
 				$scope.guest = {};
 				$scope.guest.guests = 1; // default number of guests to 1
+				// Array for checking guest names and plus ones
+				$scope.guests = [
+					{	name: "kate fletcher", 	plusone: "Jerrod Fletcher"},
+					{	name: "test", 			plusone: "Test Plus"},
+					{	name: "jeff sweatland", plusone: "Jodi Sweatland"},
+					{	name: "karen acosta", 	plusone: "Ivan Acosta"}
+				];
 			}
 
 			// rsvpForm link function
