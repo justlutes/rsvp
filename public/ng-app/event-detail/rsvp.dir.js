@@ -12,7 +12,7 @@ angular
 					{	name: "kate fletcher", 	plusone: "Jerrod Fletcher"},
 					{	name: "test", 			plusone: "Test Plus"},
 					{	name: "jeff sweatland", plusone: "Jodi Sweatland"},
-					{	name: "karen acosta", 	plusone: "Ivan Acosta"}
+					{	name: "karen acosta", 	plusone: "Ivan Acosta"},
 				];
 			}
 

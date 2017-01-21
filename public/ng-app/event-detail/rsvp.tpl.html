@@ -33,7 +33,7 @@
 
 					<div class="form-group form-inline" ng-repeat="guestPlus in guests" ng-show="guest.name.toLowerCase().indexOf(guestPlus.name) == 0 && guest.attending">
 						<label for"guests">Your Guest: <strong>{{guestPlus.plusone}}</strong></label>
-						<div class="switch-field mtm">
+						<div class="switch-field_plus mtm">
 								<input type="radio" name="plusOne" id="switch_left_plus" ng-model="guest.plusOne" ng-value="true" required checked/>
 								<label for="switch_left_plus">Attending</label>
 								<input type="radio" name="plusOne" ng-model="guest.plusOne" ng-value="false" id="switch_right_plus"/>

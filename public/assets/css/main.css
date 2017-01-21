@@ -1156,21 +1156,21 @@ input[type="number"][required] + label[placeholder]:before {
     background-color: #A62A20;
     transition: 0.3s ease-in-out; }
 
-.switch-field {
+.switch-field, .switch-field_plus {
   overflow: hidden; }
-  .switch-field input {
+  .switch-field input, .switch-field_plus input {
     display: none; }
-    .switch-field input:checked + label {
+    .switch-field input:checked + label, .switch-field_plus input:checked + label {
       background-color: #A5DC86;
       -webkit-box-shadow: none;
       box-shadow: none;
       color: #fff; }
-      .switch-field input:checked + label:last-of-type {
+      .switch-field input:checked + label:last-of-type, .switch-field_plus input:checked + label:last-of-type {
         background-color: #A62A20;
         -webkit-box-shadow: none;
         box-shadow: none;
         color: #fff; }
-  .switch-field label {
+  .switch-field label, .switch-field_plus label {
     display: inline-block;
     width: 40%;
     background-color: #e4e4e4;
@@ -1189,13 +1189,13 @@ input[type="number"][required] + label[placeholder]:before {
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out; }
     @media all and (min-width: 50em) {
-      .switch-field label {
+      .switch-field label, .switch-field_plus label {
         width: 44%; } }
-    .switch-field label:hover {
+    .switch-field label:hover, .switch-field_plus label:hover {
       cursor: pointer; }
-    .switch-field label:first-of-type {
+    .switch-field label:first-of-type, .switch-field_plus label:first-of-type {
       border-radius: 4px 0 0 4px; }
-    .switch-field label:last-of-type {
+    .switch-field label:last-of-type, .switch-field_plus label:last-of-type {
       border-radius: 0 4px 4px 0; }
 
 .mobile_nav {

@@ -1047,6 +1047,9 @@ input[type="number"][required] + label[placeholder]:before {
 			border-radius: 0 4px 4px 0;
 		}
 	}
+	&_plus {
+		@extend .switch-field;
+	}
 }
 
 .mobile_nav {
