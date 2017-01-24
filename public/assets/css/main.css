@@ -109,6 +109,9 @@ html, body {
 .tc {
   text-align: center; }
 
+.ti {
+  color: #000; }
+
 .mtm {
   margin-top: 20px; }
 
@@ -121,6 +124,9 @@ html, body {
 
 .row {
   display: block; }
+
+.ptn {
+  padding-top: 0px; }
 
 .modal-open {
   overflow: hidden; }
