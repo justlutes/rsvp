@@ -897,7 +897,7 @@ input.text, input.search, textarea.textarea {
 
 @media all and (min-width: 50em) {
   .her {
-    background-image: url("/assets/img/him.png");
+    background-image: url("/assets/img/him-cp.png");
     background-repeat: no-repeat; } }
 
 .her p {
@@ -921,7 +921,7 @@ input.text, input.search, textarea.textarea {
 
 @media all and (min-width: 50em) {
   .him {
-    background-image: url("/assets/img/her.png");
+    background-image: url("/assets/img/her-cp.png");
     background-repeat: no-repeat; } }
 
 .him p {
