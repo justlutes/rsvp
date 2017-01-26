@@ -1302,3 +1302,18 @@ input[type="number"][required] + label[placeholder]:before {
   .toggle.close:after {
     transform: rotate(225deg);
     top: 0; }
+
+.stripe-button-el {
+  background-image: linear-gradient(#A62A20, #8C001A) !important; }
+  .stripe-button-el span {
+    background: #A62A20 !important;
+    transition: .3s ease-in-out; }
+    .stripe-button-el span:hover {
+      background: #BF5700 !important;
+      transition: .3s ease-in-out; }
+
+.item1 {
+  background-image: url("/assets/img/him.png"); }
+
+.item2 {
+  background-image: url("/assets/img/her.png"); }

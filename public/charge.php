@@ -34,6 +34,21 @@
         'currency' => 'usd'
     ));
   }
+  if (isset($_POST['item3']) ) {
+
+    $email = $stripeinfo->email;
+
+    $customer = \Stripe\Customer::create(array(
+        'email' => $email,
+        'source'  => $token
+    ));
+
+    $charge = \Stripe\Charge::create(array(
+        'customer' => $customer->id,
+        'amount'   => 4000,
+        'currency' => 'usd'
+    ));
+  }
 
   header('location: /');
 ?>

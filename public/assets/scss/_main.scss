@@ -1190,3 +1190,21 @@ input[type="number"][required] + label[placeholder]:before {
 	}
 }
 
+.stripe-button-el {
+	background-image: linear-gradient($bonfire, $burgundy) !important;
+	span {
+		background: $bonfire !important;
+		transition: .3s ease-in-out;
+		&:hover {
+			background: $burnt_orange !important;
+			transition: .3s ease-in-out;
+		}
+	}
+}
+.item1 {
+	background-image: url('/assets/img/him.png');
+}
+.item2 {
+	background-image: url('/assets/img/her.png');
+}
+
