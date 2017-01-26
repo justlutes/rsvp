@@ -58,6 +58,7 @@ if(isset($_POST['name'])) {
     $email_message .= "Plus One Attending: ".clean_string($plusOne)."\n";
 
 	// create email headers
+    $email = "kyle@kcwedding.us";
 	 
 	$headers = 'From: '.$email."\r\n" . 'Reply-To: '.$email."\r\n" . 'X-Mailer: PHP/' . phpversion();
 	 
