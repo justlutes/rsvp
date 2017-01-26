@@ -31,7 +31,7 @@
 						</div>
 					</div>
 
-					<div class="form-group form-inline" ng-repeat="guestPlus in guests" ng-show="guest.name.toLowerCase().indexOf(guestPlus.name) == 0 && guest.attending">
+					<div class="form-group form-inline" ng-repeat="guestPlus in guests" ng-if="guest.name.toLowerCase().indexOf(guestPlus.name) == 0 && guest.attending">
 						<label for"guests">Your Guest: <strong>{{guestPlus.plusone}}</strong></label>
 						<div class="switch-field_plus mtm">
 								<input type="radio" name="plusOne" id="switch_left_plus" ng-model="guest.plusOne" ng-value="true" required checked/>
@@ -42,8 +42,8 @@
 						</div>
 					</div>
 
-				<div class="modal-footer">
-					<button class="btn btn-success" ng-click="processForm();" ng-disabled="rsvpForm.$invalid"><i class="fa fa-envelope-o"></i> Email RSVP</button>
+				<div class="modal-footer" ng-show="guest.name">
+					<button class="box_submit box__email" ng-click="processForm();" ng-disabled="rsvpForm.$invalid"><i class="fa fa-envelope-o"></i> Email RSVP</button>
 				</div>
 			</form>
 

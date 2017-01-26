@@ -32,6 +32,6 @@ function CountBack(myDiv, secs) {
 
 $('.toggle').on('click', function() {
 	$('.menu').toggleClass('expanded');
-	$('span').toggleClass('hidden');
+	$('.menu > span').toggleClass('hidden');
 	$('.container__mobile_nav, .toggle').toggleClass('close');
 });
