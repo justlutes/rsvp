@@ -2,6 +2,7 @@
   require_once('config.php');
 
   $token  = $_POST['stripeToken'];
+  $stripeinfo = \Stripe\Token::retrieve($token);
   
   if (isset($_POST['item1']) ) {
 

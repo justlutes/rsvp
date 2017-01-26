@@ -1,5 +1,5 @@
 <?php 
-require_once('/public/assets/js/vendor/stripe-php-4.3.0/init.php');
+require_once('./assets/js/vendor/stripe-php-4.3.0/init.php');
 
 $stripe = array(
   "secret_key"      => "sk_test_NPJB78aqY1wxqFZHMJCtxluB",
