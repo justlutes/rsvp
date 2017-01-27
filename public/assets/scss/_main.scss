@@ -778,6 +778,35 @@ input.text, input.search, textarea.textarea {
 	}
 }
 
+.item_list {
+	&__modal {
+		text-align: center;
+		h4 {
+			margin: 0 20px 0 10px;
+			padding: 20px 0;
+			i {
+				margin-right: 5px;
+			}
+		}
+		p {
+			margin: 0;
+		}
+	}
+    &__flex {
+        h2 {
+            float: none;
+            margin: 0 20px 0 10px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+	h2 {
+		float: left;
+		margin: 0 20px 0 10px;
+	}
+}
+
 .solid-bar {
 	width: 90%;
 	margin: 10px auto;
@@ -960,7 +989,7 @@ input[type="number"][required] + label[placeholder]:before {
 	height: 150px;
 	margin-top: 5px;
 	
-	line-height: 150px;
+	line-height: 100px;
 	color: white;
 	font-weight: bold;
 	font-size: 2em;
@@ -968,12 +997,13 @@ input[type="number"][required] + label[placeholder]:before {
 	@media all and (min-width: 50em) {
 			font-size: 3em;
 		}
-	&:last-of-type {
-		flex-grow: 2;
-	}
 	h3 {
 		margin: 20px 0;
 		color: $chocolate;
+	}
+	&__last {
+		flex-grow: 2;
+		line-height: 0;
 	}
 }
 
@@ -1172,24 +1202,6 @@ input[type="number"][required] + label[placeholder]:before {
 		top: 0;
 	}
 }
- 
-.stripe-button-el {
-	background-image: linear-gradient($bonfire, $burgundy) !important;
-	span {
-		background: $bonfire !important;
-		transition: .3s ease-in-out;
-		&:hover {
-			background: $burnt_orange !important;
-			transition: .3s ease-in-out;
-		}
-	}
-}
-.item1 {
-	background-image: url('/assets/img/him.png');
-}
-.item2 {
-	background-image: url('/assets/img/her.png');
-}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
   select,
@@ -1215,6 +1227,19 @@ input[type="number"][required] + label[placeholder]:before {
 		border: 2px solid $bonfire;
 		p {
 			padding-left: 5px;
+		}
+	}
+	&_registry {
+		@extend .box_rsvp;
+		cursor: pointer;
+		padding: 15px 15px 0 15px;
+		margin: 10px auto;
+		&__custom {
+			@extend .box_rsvp;
+			padding: 15px 15px 0 15px;
+			cursor: pointer;
+			width: 60%;
+			margin: 0 auto;
 		}
 	}
 	&_submit {
@@ -1249,4 +1274,9 @@ input[type="number"][required] + label[placeholder]:before {
 			transition: all 50ms;
 		}
 	}
+}
+
+.registry_input {
+	width: 50% !important;
+	height: 2em !important;
 }
