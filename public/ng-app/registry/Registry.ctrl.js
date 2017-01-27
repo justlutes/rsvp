@@ -23,7 +23,7 @@ angular
 				image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
 				token: function(token) {
 					var $input = $('<input type="hidden" name="stripeToken" />').val(token.id);
-					$("form").append($input).submit();
+					$("#customForm").append($input).submit();
 				}
 			});
 
@@ -49,7 +49,7 @@ angular
 				image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
 				token: function(token) {
 					var $input = $('<input type="hidden name=stripeToken />').val(token.id);
-					$("form").append($input).submit();
+					$("#id").append($input).submit();
 				}
 			});
 
