@@ -22,9 +22,8 @@ angular
 				key: 'pk_test_sa0wFaYe9Qvra5z0uTIdHUKk',
 				image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
 				token: function(token) {
-					$("#stripeToken").val(token.id);
-					$("#stripeEmail").val(token.email);
-					$("#registryForm5").submit();
+					var $input = $('<input type="hidden" name="stripeToken" />').val(token.id);
+					$("form").append($input).submit();
 				}
 			});
 
@@ -49,9 +48,8 @@ angular
 				key: 'pk_test_sa0wFaYe9Qvra5z0uTIdHUKk',
 				image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
 				token: function(token) {
-					$("#stripeToken").val(token.id);
-					$("#stripeEmail").val(token.email);
-					$("#"+id).submit();
+					var $input = $('<input type="hidden name=stripeToken />').val(token.id);
+					$("form").append($input).submit();
 				}
 			});
 

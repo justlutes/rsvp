@@ -9,16 +9,17 @@
         <h4>{{item.title}}</h4>
         <p>{{item.description}}</p>
         <form name="{{item.id}}" action="/charge.php" method="POST">
+            <input type="hidden" name="{{item.id}}" id="{{item.id}}" value="{{item.id}}"/>
             <input type="hidden" id="amount" name="amount" value="{{item.amount}}"/>
             <input type="hidden" id="stripeToken" name="stripeToken"/>
             <input type="hidden" id="stripeEmail" name="stripeEmail"/>
       </form>
-      <button class="box_registry box__none" id="{{item.id}}" ng-click="OpenHandler(item.amount, item.id)"><span style="display: block; min-height: 30px;">Purchase</span></button>
+      <button class="box_registry box__none" ng-click="OpenHandler(item.amount, item.id)"><span style="display: block; min-height: 30px;">Purchase</span></button>
 		</li>
       <li class="flex_item flex_item__last">
         <h4>Fill in any amount below if you don't see anything</h4>
-        <form name="registryForm5" action="/charge.php" method="POST">
-            <input type="hidden" name="item5" id="item5" value="item5"/>
+        <form name="registryForm5" action="/chargeCustom.php" method="POST">
+            <input type="hidden" name="riL" id="riL" value="riL"/>
             <input class="registry_input" type="number" id="amountCustom" name="amount"/>
             <input type="hidden" id="stripeToken" name="stripeToken"/>
             <input type="hidden" id="stripeEmail" name="stripeEmail"/>
