@@ -11,7 +11,7 @@
 			</div>
 		</li>
 		<li ng-if="!event.rsvp || !event.upcoming" class="flex_item aside__closed"></li>
-		<li class="flex_item">
+		<li class="flex_item flex_item__last">
 			<h3><i class="fa fa-map-marker"></i> When:</h3>
 			<p>{{event.time.startDatetime | date:'EEEE'}}, {{event.time.startDatetime | date:'longDate'}}</p>
 			<p>{{event.time.startDatetime | date:'shortTime'}}-{{event.time.endDatetime | date:'shortTime'}}</p>

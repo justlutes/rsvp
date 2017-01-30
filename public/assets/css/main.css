@@ -321,7 +321,7 @@ body {
   clear: both; }
   @media all and (min-width: 50em) {
     .container {
-      width: 960px; } }
+      width: 80%; } }
   .container__proposal {
     display: inline-block;
     width: 100%;
@@ -642,10 +642,9 @@ h5 {
   font-family: "vinyl",sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  color: #000;
-  line-height: 25px;
-  text-transform: uppercase;
+  font-size: 15px;
+  color: #666;
+  line-height: 15px;
   letter-spacing: -.03em; }
 
 h2 a, h3 a {
@@ -1150,7 +1149,7 @@ input[type="number"][required] + label[placeholder]:before {
 
 .flex_item {
   padding: 5px;
-  width: 46%;
+  width: 100%;
   height: 150px;
   margin-top: 5px;
   line-height: 100px;
@@ -1160,7 +1159,8 @@ input[type="number"][required] + label[placeholder]:before {
   text-align: center; }
   @media all and (min-width: 50em) {
     .flex_item {
-      font-size: 3em; } }
+      font-size: 3em;
+      width: 46%; } }
   .flex_item h3 {
     margin: 20px 0;
     color: #4E2E28; }
@@ -1352,10 +1352,10 @@ input[type="number"][required] + label[placeholder]:before {
 
 .box_registry {
   cursor: pointer;
-  padding: 15px 15px 0 15px;
+  padding: 10px 15px 5px 15px;
   margin: 10px auto; }
   .box_registry__custom {
-    padding: 15px 15px 0 15px;
+    padding: 15px 15px 5px 15px;
     cursor: pointer;
     width: 60%;
     margin: 0 auto; }
@@ -1389,3 +1389,15 @@ input[type="number"][required] + label[placeholder]:before {
 .registry_input {
   width: 50% !important;
   height: 2em !important; }
+
+.registry_button {
+  display: block;
+  min-height: 20px; }
+
+.mail_hint {
+  padding: 0px 10px;
+  line-height: 15px;
+  color: #afafaf; }
+  @media all and (min-width: 50em) {
+    .mail_hint {
+      padding: 0px 200px; } }

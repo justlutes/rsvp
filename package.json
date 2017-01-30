@@ -4,6 +4,7 @@
   "description": "RSVP app using angular.",
   "main": "ng-rsvp.js",
   "dependencies": {
+    "concurrently": "^3.1.0",
     "node-mime": "^1.0.0"
   },
   "devDependencies": {
@@ -15,7 +16,8 @@
     "start": "node ng-rsvp.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss public/assets/scss/_main.scss public/assets/css/main.css",
-    "clean-css": "cleancss -o public/assets/css/main-min.css public/assets/css/main.css"
+    "clean-css": "cleancss -o public/assets/css/main-min.css public/assets/css/main.css",
+    "dev": "concurrently \"npm run build-css\" \"npm run clean-css\""
   },
   "repository": {
     "type": "git",
