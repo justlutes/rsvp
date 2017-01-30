@@ -2,6 +2,7 @@
   require_once('config.php');
 
   $token  = $_POST['stripeToken'];
+  $amount = ($_POST['amount']) * 100;
   $stripeinfo = \Stripe\Token::retrieve($token);
 
     $email = $stripeinfo->email;
@@ -13,7 +14,7 @@
 
     $charge = \Stripe\Charge::create(array(
         'customer' => $customer->id,
-        'amount'   => 5000,
+        'amount'   => $amount,
         'currency' => 'usd'
     ));
 

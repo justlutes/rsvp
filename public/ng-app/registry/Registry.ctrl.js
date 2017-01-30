@@ -48,8 +48,8 @@ angular
 				key: 'pk_test_sa0wFaYe9Qvra5z0uTIdHUKk',
 				image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
 				token: function(token) {
-					var $input = $('<input type="hidden name=stripeToken />').val(token.id);
-					$("#id").append($input).submit();
+					var $input = $('<input type="hidden" name="stripeToken" />').val(token.id);
+					$("#"+id+"").append($input).submit();
 				}
 			});
 
