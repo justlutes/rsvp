@@ -18,5 +18,5 @@
         'currency' => 'usd'
     ));
 
-  header('location: /');
+  header('location: /registry');
 ?>
