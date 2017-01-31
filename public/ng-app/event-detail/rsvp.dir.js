@@ -52,7 +52,6 @@ angular
 					})
 					.success(function(data) {
 						$scope.showForm = false;
-						console.log(data);
 					});
 				};
 
