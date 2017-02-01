@@ -6,4 +6,4 @@
  */
 
 angular
-	.module('myApp', ['ngRoute', 'ngSanitize', 'ngMessages']);
+	.module('myApp', ['ngRoute', 'ngSanitize', 'ngMessages', 'uiGmapgoogle-maps']);

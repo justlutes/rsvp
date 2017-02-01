@@ -1401,3 +1401,6 @@ input[type="number"][required] + label[placeholder]:before {
   @media all and (min-width: 50em) {
     .mail_hint {
       padding: 0px 200px; } }
+
+.angular-google-map-container {
+  height: 400px; }
