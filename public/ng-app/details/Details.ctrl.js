@@ -15,15 +15,22 @@ angular
 					latitude: 28.7079964,
 					longitude: -81.2679684
 				},
-				zoom: 12 
+				zoom: 14
 			};
 			$scope.marker = {
 				id: 1,
+				url: 'https://www.google.com/maps?ll=28.708294,-81.266482&z=17&t=m&hl=en-US&gl=US&mapclient=apiv3&cid=18090035913837276952',
 				coords: {
-					latitude: 28.7079964,
-					longitude: -81.2679684
+					latitude: 28.708327,
+					longitude: -81.266342
 				},
-				options: { draggable: false },
+				options: { draggable: false,
+							title: 'Luxmore Grande Estate' },
+			    events: {
+					click: function( marker, eventName, args) {
+						window.open($scope.marker.url);
+					}
+				}
 			};
 		}
 	]);
