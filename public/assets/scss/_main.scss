@@ -1294,4 +1294,9 @@ input[type="number"][required] + label[placeholder]:before {
 
 .angular-google-map-container {
 	height: 350px;
+	width: 95%;
+	margin: 0 auto;
+	@media all and (min-width: 50em) {
+		width: 100%; 
+	}
 }
