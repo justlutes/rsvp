@@ -128,6 +128,24 @@ html, body {
 .ptn {
   padding-top: 0px; }
 
+.fs12 {
+  font-size: 12px; }
+  @media all and (min-width: 50em) {
+    .fs12 {
+      font-size: 16px; } }
+
+.mobile__hide {
+  display: none; }
+  @media all and (min-width: 50em) {
+    .mobile__hide {
+      display: block; } }
+
+.mobile__show {
+  display: block; }
+  @media all and (min-width: 50em) {
+    .mobile__show {
+      display: none; } }
+
 .modal-open {
   overflow: hidden; }
 
@@ -368,7 +386,7 @@ body {
   margin: 0 auto; }
   @media all and (min-width: 50em) {
     .twocol {
-      width: 460px;
+      width: 45.6%;
       float: left;
       margin: 0 10px; } }
 
@@ -384,7 +402,7 @@ body {
   margin: 0; }
   @media all and (min-width: 50em) {
     .fourcol {
-      width: 220px;
+      width: 26%;
       height: auto;
       float: left;
       margin: 0 10px; } }
@@ -444,7 +462,7 @@ body {
   margin: 0 10px; }
   @media all and (min-width: 50em) {
     .fourcol_3 {
-      width: 700px;
+      width: 70%;
       height: auto;
       float: left;
       margin: 0 10px; } }
@@ -475,13 +493,12 @@ body {
 
 .slidescol {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 0 0 5.5%; }
   @media all and (min-width: 50em) {
     .slidescol {
-      width: 800px;
+      width: 63%;
       height: auto;
-      margin: 0 10px;
-      margin-left: 18.4%; } }
+      margin: 0 auto; } }
 
 .rule {
   width: 100%;
@@ -559,13 +576,13 @@ body#services a#servicesnav {
   border-bottom: 5px solid #BF5700; }
 
 ::selection {
-  background: #BF5700; }
+  background: #D1A054; }
 
 ::-moz-selection {
-  background: #BF5700; }
+  background: #D1A054; }
 
 ::-webkit-selection {
-  background: #BF5700; }
+  background: #D1A054; }
 
 /*~~~~~~~ AND SO WE BEGIN ~~~~~~~*/
 p a, blockquote a {

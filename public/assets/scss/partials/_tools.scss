@@ -29,3 +29,25 @@
 .ptn {
     padding-top: 0px;
 }
+
+.fs12 {
+    font-size: 12px;
+    @media all and (min-width: 50em) {
+        font-size: 16px;
+    }
+}
+
+.mobile {
+    &__hide {
+        display: none;
+        @media all and (min-width: 50em) {
+        display: block;
+        }
+    }
+    &__show {
+        display: block;
+        @media all and (min-width: 50em) {
+        display: none;
+        }
+    }
+}

@@ -84,7 +84,7 @@ body {
     height: auto;
     margin: 0 auto;
 	@media all and (min-width: 50em) {
-		width: 460px;
+		width: 45.6%;
 		float: left;
 		margin: 0 10px;
 	}
@@ -102,7 +102,7 @@ body {
     height: auto;
     margin: 0;
 	@media all and (min-width: 50em) {
-		width: 220px;
+		width: 26%;
 		height: auto;
 		float: left;
 		margin: 0 10px;
@@ -172,7 +172,7 @@ body {
     float: none;
     margin: 0 10px;
 	@media all and (min-width: 50em) {
-		width: 700px;
+		width: 70%;
 		height: auto;
 		float: left;
 		margin: 0 10px;
@@ -210,12 +210,11 @@ body {
 
 .slidescol {
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 0 0 5.5%;
 	@media all and (min-width: 50em) {
-		width: 800px;
+		width: 63%;
 		height: auto;
-		margin: 0 10px;
-		margin-left: 18.4%;
+		margin: 0 auto;
 	}
 }
 
@@ -309,13 +308,13 @@ border-bottom: 5px solid $burnt_orange;
 
 
 ::selection {
-    background:$burnt_orange;
+    background:$honey_gold;
 }
 ::-moz-selection {
-    background:$burnt_orange;
+    background:$honey_gold;
 }
 ::-webkit-selection {
-    background:$burnt_orange;
+    background:$honey_gold;
 }
 
 
