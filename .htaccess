@@ -3,8 +3,6 @@ RewriteEngine On
 Options FollowSymLinks
 
 RewriteBase /
-RewriteCond %{HTTP_HOST} ^kcwedding.us [NC]
-RewriteRule ^(.*)$ http://www.kcwedding.us/$1 [L,R=301,NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /#/$1 [L]
