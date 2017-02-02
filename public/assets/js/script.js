@@ -21,7 +21,7 @@ function CountBack(myDiv, secs) {
 	DisplayStr = DisplayStr.replace(/%%H%%/g, Calcage(secs, 3600, 24));
 	DisplayStr = DisplayStr.replace(/%%M%%/g, Calcage(secs, 60, 60));
 	DisplayStr = DisplayStr.replace(/%%S%%/g, Calcage(secs, 1, 60));
-	if (secs > 0) {
+	if (secs > 0 && myDiv.length > 0) {
 		document.getElementById(myDiv).innerHTML = DisplayStr;
 		setTimeout("CountBack('" + myDiv + "'," + (secs - 1) + ");", 990);
 	}
