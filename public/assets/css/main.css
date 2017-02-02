@@ -389,6 +389,8 @@ body {
       width: 49%;
       float: left;
       margin: 0 auto; } }
+  .twocol p {
+    padding: 0 10px; }
 
 .threecol {
   width: 300px;
