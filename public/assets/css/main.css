@@ -386,9 +386,9 @@ body {
   margin: 0 auto; }
   @media all and (min-width: 50em) {
     .twocol {
-      width: 45.6%;
+      width: 49%;
       float: left;
-      margin: 0 10px; } }
+      margin: 0 auto; } }
 
 .threecol {
   width: 300px;
@@ -914,7 +914,8 @@ input.text, input.search, textarea.textarea {
 @media all and (min-width: 50em) {
   .her {
     background-image: url("/assets/img/him-cp.png");
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat;
+    margin-right: 20px; } }
 
 .her p {
   padding: 0 10px; }

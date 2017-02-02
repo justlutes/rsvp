@@ -84,9 +84,9 @@ body {
     height: auto;
     margin: 0 auto;
 	@media all and (min-width: 50em) {
-		width: 45.6%;
+		width: 49%;
 		float: left;
-		margin: 0 10px;
+		margin: 0 auto;
 	}
 }
 
@@ -699,12 +699,13 @@ input.text, input.search, textarea.textarea {
 	@media all and (min-width: 50em) {
 		background-image: url('/assets/img/him-cp.png');
 		background-repeat: no-repeat;
+		margin-right: 20px;
 	}
 	p {
 		padding: 0 10px;
 	}
 	img {
-        width: 100%;
+        width: auto;
 		transition: opacity .2s ease-in;
 		-webkit-transition: opacity .2s ease-in; /*safari and chrome */
 		-o-transition: opacity .2s ease-in; /* opera */ 
