@@ -1,24 +1,9 @@
+@import 'partials/variables';
 @import 'partials/angular';
 @import 'partials/reset';
 @import 'partials/fonts';
 @import 'partials/tools';
 @import 'partials/modal';
-
-/*
-Colors:
-*/
-$grey: #444;
-$turq: #68BCA5;
-$honey_gold: #D1A054; /* rgb 209, 160, 84 */
-$bonfire: #A62A20; /* rgb 166, 42, 32 */
-$burnt_orange: #BF5700; /* rgb 191, 87, 0 */
-$chocolate: #4E2E28; /* rgb 78,46,40 */
-$burgundy: #8C001A; /* rgb 140, 0, 26 */
-
-$size: 36px;
-$height: $size / 8;
-$margin: $size / 3.2;
-$toggle: ($size + $margin*2) * 1.5;
 
 body {
 	background-color:#f6f6f6;
@@ -269,7 +254,7 @@ img.prop:hover {
 	width: 100%;
 	height: auto;
 	padding: 19px 0;
-	font-family: "vinyl",sans-serif;
+	font-family: $primary-font;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
@@ -278,8 +263,8 @@ img.prop:hover {
 	@media all and (min-width: 50em) {
 		display: block;
 		background: #f6f6f6;
-		width: 50vw;
-		font-size: 26px;
+		width: 55vw;
+		font-size: 25px;
 	}
 }
 
@@ -338,7 +323,7 @@ p a:hover, blockquote a:hover {
 
 p {
 	color: #666;
-	font-family: "rooney-web",serif;
+	font-family: $secondary-font;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -347,7 +332,7 @@ p {
 }
 
 h1 {
-	font-family: "vinyl",sans-serif;
+	font-family: $primary-font;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 36px;
@@ -369,7 +354,7 @@ h1.profile {
 }
 
 h2 {
-	font-family: "vinyl",sans-serif;
+	font-family: $primary-font;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 30px;
@@ -380,7 +365,7 @@ h2 {
 }
 
 h3 {
-	font-family: "vinyl",sans-serif;
+	font-family: $primary-font;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 26px;
@@ -391,7 +376,7 @@ h3 {
 }
 
 h4 {
-	font-family: "vinyl",sans-serif;
+	font-family: $primary-font;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -401,7 +386,7 @@ h4 {
 }
 
 h5 {
-	font-family: "vinyl",sans-serif;
+	font-family: $primary-font;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 15px;
@@ -424,7 +409,7 @@ h2 a:hover, h3 a:hover {
 ul.details li {
 	list-style-type: disc;
 	color: #666;
-	font-family: "rooney-web",serif;
+	font-family: $secondary-font;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -520,7 +505,7 @@ ul.details li {
 
 blockquote {
 	color: #000;
-	font-family: "rooney-web",serif;
+	font-family: $secondary-font;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 21px;
@@ -630,7 +615,7 @@ blockquote {
 	padding: 0;
 	li {
 		color: #666;
-		font-family: "rooney-web",serif;
+		font-family: $secondary-font;
 		font-style: normal;
 		font-weight: 400;
 		font-size: 10px;
@@ -828,7 +813,7 @@ input.text, input.search, textarea.textarea {
 .btn {
 	cursor: pointer;
 	color: $bonfire;
-	font-family: "rooney-web",serif;
+	font-family: $secondary-font;
 	font-size: 16px;
 	font-weight: 400;
 	font-style: normal;
@@ -875,7 +860,7 @@ input.text, input.search, textarea.textarea {
 
 label {
 	color: #666;
-    font-family: "rooney-web",serif;
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1092,7 +1077,7 @@ input[type="number"][required] + label[placeholder]:before {
 	align-items: center;
 	background: transparent;
 	margin: 0;
-	font-family: "vinyl",sans-serif;
+	font-family: $primary-font;
 }
 .menu {
 	display: block;
@@ -1112,7 +1097,7 @@ input[type="number"][required] + label[placeholder]:before {
 		width: $toggle*4;
 	}
 	span {
-		padding: 9px 5px;
+		padding: 9px 2px;
 		white-space: nowrap;
 		visibility: visible;
 		opacity: 1;
@@ -1157,7 +1142,7 @@ input[type="number"][required] + label[placeholder]:before {
 		a {
 			color: $chocolate;
 			text-decoration: none;
-			font-size: $size/2.5; //14.36
+			font-size: $size/3.16; //14.36
 			transition: .3s;
 			&:hover {
 				color: $honey_gold;

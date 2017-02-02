@@ -1,3 +1,12 @@
+/*
+Colors:
+*/
+/* rgb 209, 160, 84 */
+/* rgb 166, 42, 32 */
+/* rgb 191, 87, 0 */
+/* rgb 78,46,40 */
+/* rgb 140, 0, 26 */
+/* Mobile Nav Variables */
 /*----------------------------------------------- AngularJS --*/
 [ng\:cloak],
 [ng-cloak],
@@ -320,14 +329,6 @@ html, body {
 .affix {
   position: fixed; }
 
-/*
-Colors:
-*/
-/* rgb 209, 160, 84 */
-/* rgb 166, 42, 32 */
-/* rgb 191, 87, 0 */
-/* rgb 78,46,40 */
-/* rgb 140, 0, 26 */
 body {
   background-color: #f6f6f6; }
 
@@ -544,7 +545,7 @@ img.prop:hover {
   width: 100%;
   height: auto;
   padding: 19px 0;
-  font-family: "vinyl",sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -554,8 +555,8 @@ img.prop:hover {
     #menu {
       display: block;
       background: #f6f6f6;
-      width: 50vw;
-      font-size: 26px; } }
+      width: 55vw;
+      font-size: 25px; } }
 
 li#menunav {
   display: inline;
@@ -601,7 +602,7 @@ p a:hover, blockquote a:hover {
 
 p {
   color: #666;
-  font-family: "rooney-web",serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -609,7 +610,7 @@ p {
   margin: 0 0 15px 0; }
 
 h1 {
-  font-family: "vinyl",sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -629,7 +630,7 @@ h1.profile {
       width: 100%; } }
 
 h2 {
-  font-family: "vinyl",sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -639,7 +640,7 @@ h2 {
   letter-spacing: -.03em; }
 
 h3 {
-  font-family: "vinyl",sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
@@ -649,7 +650,7 @@ h3 {
   letter-spacing: -.03em; }
 
 h4 {
-  font-family: "vinyl",sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -658,7 +659,7 @@ h4 {
   letter-spacing: -.03em; }
 
 h5 {
-  font-family: "vinyl",sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -680,7 +681,7 @@ h2 a:hover, h3 a:hover {
 ul.details li {
   list-style-type: disc;
   color: #666;
-  font-family: "rooney-web",serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -765,7 +766,7 @@ ul.details li {
 
 blockquote {
   color: #000;
-  font-family: "rooney-web",serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
@@ -855,7 +856,7 @@ blockquote {
   padding: 0; }
   .slidesjs-pagination li {
     color: #666;
-    font-family: "rooney-web",serif;
+    font-family: "Playfair Display", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -1022,7 +1023,7 @@ input.text, input.search, textarea.textarea {
 .btn {
   cursor: pointer;
   color: #A62A20;
-  font-family: "rooney-web",serif;
+  font-family: "Playfair Display", serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -1064,7 +1065,7 @@ input.text, input.search, textarea.textarea {
 
 label {
   color: #666;
-  font-family: "rooney-web",serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1255,7 +1256,7 @@ input[type="number"][required] + label[placeholder]:before {
   align-items: center;
   background: transparent;
   margin: 0;
-  font-family: "vinyl",sans-serif; }
+  font-family: "Fira Sans", sans-serif; }
   @media all and (min-width: 50em) {
     .mobile_nav {
       display: none; } }
@@ -1277,7 +1278,7 @@ input[type="number"][required] + label[placeholder]:before {
   .menu.expanded {
     width: 351px; }
   .menu span {
-    padding: 9px 5px;
+    padding: 9px 2px;
     white-space: nowrap;
     visibility: visible;
     opacity: 1;
@@ -1311,7 +1312,7 @@ input[type="number"][required] + label[placeholder]:before {
     .menu span a {
       color: #4E2E28;
       text-decoration: none;
-      font-size: 14.4px;
+      font-size: 11.39241px;
       transition: .3s; }
       .menu span a:hover {
         color: #D1A054; }
