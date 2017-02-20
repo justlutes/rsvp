@@ -1,19 +1,25 @@
 angular
 	.module('myApp')
-	.directive('rsvpForm', ['$http',
+	.directive('rsvpForm', ['$http', 'guestData',
 		function($http) {
 
 			// rsvpForm controller function
-			function rsvpCtrl($scope) {
+			function rsvpCtrl($scope, guestData) {
 				$scope.guest = {};
 				$scope.guest.guests = 1; // default number of guests to 1
-				// Array for checking guest names and plus ones
-				$scope.guests = [
-					{	name: "kate fletcher", 	plusone: "Jerrod Fletcher"},
-					{	name: "test", 			plusone: "Test Plus"},
-					{	name: "jeff sweatland", plusone: "Jodi Sweatland"},
-					{	name: "karen acosta", 	plusone: "Ivan Acosta"},
-				];
+
+				// get guest data
+				guestData.get().then(function(data) {
+					$scope.guests = [];
+
+					for ( var guestID in data ) {
+						var thisGuest = data[guestID];
+
+						if ( !thisGuest.rsvp ) {
+							$scope.guests.push(thisGuest);
+						}
+					}
+				});
 			}
 
 			// rsvpForm link function
