@@ -508,13 +508,17 @@ blockquote {
 	font-family: $secondary-font;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 21px;
-	line-height: 31px;
+	font-size: 14px;
+	line-height: 25px;
 	margin: 0 0 15px 0;
 	letter-spacing: .04em;
 	font-style: italic;
 	background: #fff;
 	padding: 20px;
+	@media all and (min-width: 50em) {
+		font-size: 21px;
+		line-height: 31px;
+	}	
 }
 
 .zag {
