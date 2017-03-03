@@ -697,6 +697,9 @@ ul.details li {
   /*safari and chrome */
   -o-transition: background-color .25s ease-in;
   /* opera */ }
+  @media all and (min-width: 50em) {
+    .count {
+      height: 183px; } }
 
 .count:hover {
   background: #BF5700;

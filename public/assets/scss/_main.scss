@@ -424,6 +424,9 @@ ul.details li {
 	height:151px;
 	-webkit-transition: background-color .25s ease-in; /*safari and chrome */
  	-o-transition: background-color .25s ease-in; /* opera */
+	 @media all and (min-width: 50em) {
+		height: 183px;
+	}
 }
 
 .count:hover {
