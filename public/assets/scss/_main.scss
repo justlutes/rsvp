@@ -277,10 +277,10 @@ li#menunav {
 
 
 #menunav a {
-	color: $chocolate;
+	color: $dark_liver;
 	margin:0 7px;
 	&:hover {
-		border-bottom: 5px solid $honey_gold;
+		border-bottom: 5px solid $french_beige;
 	}
 }
 
@@ -291,25 +291,25 @@ body#details a#detailsnav,
 body#registry a#registrynav,
 body#services a#servicesnav {
 color: #000;
-border-bottom: 5px solid $burnt_orange;
+border-bottom: 5px solid $tuscan;
 }
 
 
 ::selection {
-    background:$honey_gold;
+    background:$french_beige;
 }
 ::-moz-selection {
-    background:$honey_gold;
+    background:$french_beige;
 }
 ::-webkit-selection {
-    background:$honey_gold;
+    background:$french_beige;
 }
 
 
 /*~~~~~~~ AND SO WE BEGIN ~~~~~~~*/
 
 p a, blockquote a {
-    color: $burgundy;
+    color: $french_beige;
     background-color: none;
     text-decoration: none;
     -webkit-transition: color .2s ease-in; /*safari and chrome */
@@ -317,7 +317,7 @@ p a, blockquote a {
 }
 
 p a:hover, blockquote a:hover {
-    color:$burnt_orange;
+    color:$champagne_pink;
 
 }
 
@@ -418,7 +418,7 @@ ul.details li {
 }
 
 .count {
-	background:$chocolate;
+	background:$french_beige;
 	padding:12px 0 0 0;
 	width:100%;
 	height:151px;
@@ -430,7 +430,7 @@ ul.details li {
 }
 
 .count:hover {
-	background: $burnt_orange;
+	background: $tuscan;
 	cursor:pointer;
 }
 
@@ -662,7 +662,7 @@ footer {
 	height: 45px;
 	margin: 0 auto;
 	text-align: center;
-	background: $chocolate;
+	background: $dark_liver;
 	p {
 		color: #fff;
 		padding-top: 10px;
@@ -811,7 +811,7 @@ input.text, input.search, textarea.textarea {
 	width: 90%;
 	margin: 10px auto;
 	height: 1px;
-	background: $honey_gold;
+	background: $champagne_pink;
 	@media all and (min-width: 50em) {
 		width: 100%;
 	}
@@ -999,7 +999,7 @@ input[type="number"][required] + label[placeholder]:before {
 		}
 	h3 {
 		margin: 20px 0;
-		color: $chocolate;
+		color: $dark_liver;
 	}
 	&__last {
 		flex-grow: 2;
@@ -1011,7 +1011,7 @@ input[type="number"][required] + label[placeholder]:before {
 	cursor: pointer;
     margin-left: 5px;
 	p {
-		color: $bonfire;
+		color: $french_beige;
 		text-transform: uppercase;
 		font-size: 35px;
 		line-height: 50px;
@@ -1217,14 +1217,14 @@ input[type="number"][required] + label[placeholder]:before {
 		background: transparent;
 		border-radius: 4px;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-		color: $bonfire;
+		color: $french_beige;
 		display: flex;
 		font-weight: 100;
 		justify-content: center;
 		margin: 10px;
 		padding: 15px;
 		transition: all 400ms ease-in-out;
-		border: 2px solid $bonfire;
+		border: 2px solid $french_beige;
 		p {
 			padding-left: 5px;
 		}
@@ -1244,7 +1244,7 @@ input[type="number"][required] + label[placeholder]:before {
 	}
 	&_submit {
 		@extend .box_rsvp;
-		background: $bonfire;
+		background: $french_beige;
 		width: 50%;
 		margin: 0 auto;
 		cursor: pointer;
@@ -1265,13 +1265,15 @@ input[type="number"][required] + label[placeholder]:before {
 	}
 	&__email {
 		&:hover {
-			background: $burgundy;
+			background: $champagne_pink;
 			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			color: $dark_liver;
 		}
 		&:active {
-			background: $burgundy;
+			background: $champagne_pink;
 			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 			transition: all 50ms;
+			color: $dark_liver;
 		}
 	}
 }
