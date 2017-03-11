@@ -496,7 +496,7 @@ body {
 
 .slidescol {
   width: 90%;
-  margin: 0 0 0 5.5%; }
+  margin: 0 0 0 3.5%; }
   @media all and (min-width: 50em) {
     .slidescol {
       width: 63%;
@@ -1342,7 +1342,7 @@ input[type="number"][required] + label[placeholder]:before {
   cursor: pointer; }
   .toggle:after, .toggle:before {
     content: '';
-    background: #A62A20;
+    background: #D4AA7D;
     width: 36px;
     height: 4.5px;
     margin: auto;
@@ -1446,3 +1446,12 @@ input[type="number"][required] + label[placeholder]:before {
   @media all and (min-width: 50em) {
     .angular-google-map-container {
       width: 100%; } }
+
+#slides {
+  width: 350px;
+  margin: 0 auto; }
+  #slides .slidesjs-pagination {
+    display: none; }
+    @media all and (min-width: 50em) {
+      #slides .slidesjs-pagination {
+        display: inline-block; } }

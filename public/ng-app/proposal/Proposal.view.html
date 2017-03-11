@@ -1,9 +1,10 @@
 <div class="container__proposal">
     <div class="slidescol">
         <div id="slides">
-            <img src="/assets/img/her.png">
-            <img src="/assets/img/him.png">
-            <img src="/assets/img/rsvp.png">
+            <img src="/assets/img/proposal3.jpg">
+            <img src="/assets/img/proposal4.jpg">
+            <img src="/assets/img/proposal2.jpg">
+            <img src="/assets/img/proposal1.jpg">
         </div>
         <h4 class="tc">The Proposal</h4>
         <p class="tc"><em>As Told By The Bride</em></p>
@@ -34,10 +35,20 @@
 </div>
 <script>
     $(function () {
+        var height = '467px';
+        var width = '350px';
         $('#slides').slidesjs({
-            width: 940,
-            height: 528,
-            navigation: false
+            width: 350,
+            height: 467,
+            navigation: false,
+            callback: {
+            loaded: function(number) {
+                $(".slidesjs-container").css("height", height);
+                $(".slidesjs-container").css("width", width);
+                $(".slidesjs-control").css("height", height);
+                $(".slidesjs-control").css("width", width);
+            }
+        }
         });
     });
 </script>

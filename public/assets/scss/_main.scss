@@ -198,7 +198,7 @@ body {
 
 .slidescol {
 	width: 90%;
-	margin: 0 0 0 5.5%;
+	margin: 0 0 0 3.5%;
 	@media all and (min-width: 50em) {
 		width: 63%;
 		height: auto;
@@ -1177,7 +1177,7 @@ input[type="number"][required] + label[placeholder]:before {
 	&:after,
 	&:before {
 		content: '';
-		background: $bonfire;
+		background: $french_beige;
 		width: $size;
 		height: $height;
 		margin: auto;
@@ -1302,5 +1302,16 @@ input[type="number"][required] + label[placeholder]:before {
 	margin: 0 auto;
 	@media all and (min-width: 50em) {
 		width: 100%; 
+	}
+}
+
+#slides {
+	width: 350px;
+	margin: 0 auto;
+	.slidesjs-pagination {
+		display: none;
+		@media all and (min-width: 50em) {
+			display: inline-block;
+		}
 	}
 }
