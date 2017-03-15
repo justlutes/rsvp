@@ -1,11 +1,9 @@
-@import 'partials/variables';
-
 $hue: 241;
 
 $distance: 0;
 $color: hsl($hue, 100%, 59%);
 $accent: hsl( ($hue + $distance), 100%, 50%);
-$grey: $ddd;
+$grey: #ddd;
 $sans: $primary-font;
 $ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1.000);
 $short: 300ms;

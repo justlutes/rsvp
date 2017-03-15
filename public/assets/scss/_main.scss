@@ -1,9 +1,13 @@
+// Partials
 @import 'partials/variables';
 @import 'partials/angular';
 @import 'partials/reset';
 @import 'partials/fonts';
 @import 'partials/tools';
 @import 'partials/modal';
+
+// Components
+@import 'components/wedding_party';
 
 body {
 	background-color:#f6f6f6;

@@ -33,7 +33,7 @@ angular
 				}
 			};
 
-			$('.member').on('click', function(){
+			$('.member').on('click', function(e){
 				if (!$(this).hasClass('selected')){
 					$(this).addClass('selected');
 					$('.wrap').addClass('member-selected');
