@@ -1,0 +1,96 @@
+/*~~~~~~~~~~~ Slides ~~~~~~~~~~~~~~*/
+
+#slides {
+	display: none;
+	.slidesjs {
+		&-navigation {
+			margin-top: 3px;
+		}
+		&-previous {
+			margin-right: 5px;
+			float: left;
+		}
+		&-next {
+			margin-right: 5px;
+			float: left;
+		}
+	}
+}
+
+.slides_container {
+	width: 100%;
+	@media all and (min-width: 50em) {
+		width:800px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+		display: block;
+	}
+}
+
+.slides_control {
+	position: relative;
+	width: 80%;
+	height: auto;
+	left: -15%;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:800px;
+	height:533px;
+	display:block;
+	float: left;
+}
+
+/*
+	Pagination
+*/
+
+.slidesjs-pagination {
+	display: inline-block;
+	width:auto;
+	padding: 0;
+	li {
+		color: #666;
+		font-family: $secondary-font;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 10px;
+		width:23px;
+		height:23px;
+		margin:10px 10px 0 0;
+		float: left;
+		a {
+			height:auto;
+			float:left;
+			overflow:visible;
+			color:#cecece;
+			background-color: #cecece;	
+			width:23px;
+			height:23px;
+			&.active {
+				background-color: $honey_gold;
+				color: $honey_gold;
+			}
+		}	
+	}	
+}
+
+#slides {
+	width: 350px;
+	margin: 0 auto;
+	.slidesjs-pagination {
+		display: none;
+		@media all and (min-width: 50em) {
+			display: inline-block;
+		}
+	}
+}

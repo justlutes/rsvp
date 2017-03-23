@@ -1,0 +1,47 @@
+.btn {
+	cursor: pointer;
+	color: $bonfire;
+	font-family: $secondary-font;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	line-height: 1em;
+	color: #666;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #fff;
+	background-color: rgba(255,255,255, 0);
+	box-shadow: 0 0 0 0 $bonfire inset, 0.3em 0.2em 0 0 #bbb;
+	border: 0.2em solid $bonfire;
+	padding: 0.8em;
+	text-align: center;
+	transition: 0.25s box-shadow, 0.25s transform;
+	width: 100%;
+	margin-bottom: 10px;
+	&-success {
+		border: 0.2em solid $honey_gold;
+		@media all and (min-width: 50em) {
+			width: 100%;
+			margin-left: 0;
+		}
+		&:hover {
+			box-shadow: 0 4em 0 0 $honey_gold inset, 0em 0em 0 0 #bbb;
+			transform: translate(0.3em, 0.2em);
+			color: #666;
+		}
+	}
+	&-default {
+		border: 0.2em solid $bonfire;
+		@media all and (min-width: 50em) {
+			width: 50%;
+			margin-left: 235px;
+		}
+		&:hover {
+			box-shadow: 0 4em 0 0 $bonfire inset, 0em 0em 0 0 #bbb;
+			transform: translate(0.3em, 0.2em);
+			color: #fff;
+		}
+	}
+}

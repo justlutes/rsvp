@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!--[if lte IE 8]><html lang="en" class="no-js oldIE ie no-angular"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie9 ie" ng-app="myApp"><![endif]-->
+<!--[if gt IE 9|!IE]><!--><html class="no-js" ng-app="myApp"><!-- <![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>RSVP</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<base href="/" />
+
+		<!-- Stylesheets -->
+		<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="all">-->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+		<link href='//fonts.googleapis.com/css?family=Playfair+Display|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<link href="/assets/css/style.min.css" rel="stylesheet" media="all">
+	</head>
+
+	<body ng-cloak>
+		<!-- HEADER -->
+		<div class="top"></div>
+		<div class="mobile_nav">
+			<div class="menu">
+				<div class="container__mobile_nav">
+					<div class="toggle"></div>
+				</div>
+				<span class="hidden">
+					<a href="/" id="homenav">The Couple</a>
+				</span>
+				<span class="hidden">
+					<a href="/proposal" id="homenav">Proposal</a>
+				</span>
+				<span class="hidden">
+					<a href="/event/wedding" id="homenav">RSVP</a>
+				</span>
+				<span class="hidden">
+					<a href="/details" id="homenav">Wedding Details</a>
+				</span>
+				<span class="hidden">
+					<a href="/registry" id="homenav">Registry</a>
+				</span>
+			</div>
+		</div>
+		<div class="zag"></div>
+		<div id="menu">
+			<li id="menunav">
+				<a href="/" id="homenav">The Couple</a>
+			</li>
+			<li id="menunav">
+				<a href="/proposal" id="proposalnav">Proposal</a>
+			</li>
+			<li id="menunav">
+				<a href="/event/wedding" id="rsvpnav">RSVP</a>
+			</li>
+			<li id="menunav">
+				<a href="/details" id="detailsnav">Wedding Details</a>
+			</li>
+			<li id="menunav">
+				<a href="/registry" id="registrynav">Registry</a>
+			</li>
+		</div>
+
+
+		<!-- CONTENT (Angular View) -->
+		<div class="layout-view" ng-view autoscroll="true"></div>
+
+		<!-- FOOTER -->
+		<div style="clear:both;margin-top:30px"></div>
+		<footer>
+			<p><i class="fa fa-quote-left" aria-hidden="true"></i> Always, Forever, &amp; Ever <i class="fa fa-quote-right"></i><p>
+			<p class="ti ptn"><i class="fa fa-code" aria-hidden="true"></i> built by the <a href="http://www.kyle-lutes.com" target="_blank">groom</a></p>
+		</footer>
+		<!--<footer class="footer small clearfix">
+			<a href="https://github.com/ng-bridge-ann-arbor/ng-rsvp">ng-rsvp</a>
+		</footer>-->
+
+		<!-- JS Libraries -->
+		<!-- ..jQuery (minified) -->
+		<script src="assets/components/jquery/jquery-2.1.3.min.js"></script>
+		<script src="https://checkout.stripe.com/checkout.js"></script>
+		<script src='//maps.googleapis.com/maps/api/js?key=AIzaSyAOfqSJk-6IGdJ2xvrcwwHF0zFQpbK_jdg'></script>
+
+		<!-- Angular and necessary modules (full development) -->
+		<script src="assets/components/angular/angular-1.3.15.js"></script>
+		<script src="assets/components/angular/angular-route.js"></script>
+		<script src="assets/components/angular/angular.sanitize.js"></script>
+		<script src="assets/components/angular/angular.messages.js"></script>
+
+		<!-- Angular app JS files -->
+		<script src="/ng-app/core/app.module.js"></script>
+		<script src="/ng-app/core/app.config.js"></script>
+		<script src="/ng-app/core/trustAsHtml.filter.js"></script>
+		<script src="/ng-app/core/eventData.service.js"></script>
+		<script src="/ng-app/core/registryData.service.js"></script>
+		<script src="/ng-app/core/guestData.service.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.0.1/lodash.js" type="text/javascript"></script>
+		<script src="//cdn.rawgit.com/nmccready/angular-simple-logger/master/dist/angular-simple-logger.js"></script>
+		<script src="assets/components/angular/dist/angular-google-maps.js"></script>
+
+		<script src="/ng-app/home/Home.ctrl.js"></script>
+
+		<script src="/ng-app/events/Events.ctrl.js"></script>
+		<script src="/ng-app/proposal/Proposal.ctrl.js"></script>
+		<script src="/ng-app/registry/Registry.ctrl.js"></script>
+		<script src="/ng-app/registry/registry.dir.js"></script>
+		<script src="/ng-app/details/Details.ctrl.js"></script>
+
+		<script src="/ng-app/event-detail/EventDetail.ctrl.js"></script>
+		<script src="/ng-app/event-detail/rsvp.dir.js"></script>
+		<script src="assets/components/jquery/jquery.slides.min.js"></script>
+		<script src="assets/js/scripts.min.js"></script>
+		<script src="assets/components/modernizr/modernizr.js"></script>
+
+	</body>
+</html>
