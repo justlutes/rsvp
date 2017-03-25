@@ -418,6 +418,9 @@ textarea {
 .mbm {
   margin-bottom: 20px; }
 
+.ps10 {
+  padding: 0 10px; }
+
 @media all and (min-width: 50em) {
   .oneoftwo {
     width: 50%; } }
@@ -738,7 +741,8 @@ h1.profile {
   margin: 15px 0;
   font-size: 28px;
   line-break: 28px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  text-align: center; }
   @media all and (min-width: 50em) {
     h1.profile {
       width: 100%; } }
@@ -868,15 +872,17 @@ blockquote {
   .our_story {
     background-image: url("/assets/img/our_story2.png");
     background-repeat: no-repeat;
-    height: auto;
-    background-size: cover; } }
+    max-height: 500px;
+    max-width: 667px;
+    background-size: cover;
+    margin: 0 auto; } }
 
 .our_story p {
   padding: 0 10px; }
 
 .our_story img {
   width: 100%;
-  height: auto;
+  max-height: 500px;
   transition: opacity .2s ease-in;
   -webkit-transition: opacity .2s ease-in;
   /*safari and chrome */
@@ -889,7 +895,7 @@ blockquote {
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
   @media all and (min-width: 50em) {
     .our_story img {
-      width: 100%; } }
+      width: 667px; } }
 
 .event_list__modal {
   text-align: center; }
