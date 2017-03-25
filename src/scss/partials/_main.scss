@@ -239,12 +239,11 @@ blockquote {
 	}	
 }
 
-.her {
+.our_story {
 	@media all and (min-width: 50em) {
-		background-image: url('/assets/img/him-cp.png');
+		background-image: url('/assets/img/our_story2.png');
 		background-repeat: no-repeat;
-		margin-right: 20px;
-		height: 317px;
+		height: auto;
 		background-size: cover;
 	}
 	p {
@@ -252,36 +251,7 @@ blockquote {
 	}
 	img {
         width: 100%;
-		height: 317px;
-		transition: opacity .2s ease-in;
-		-webkit-transition: opacity .2s ease-in; /*safari and chrome */
-		-o-transition: opacity .2s ease-in; /* opera */ 
-		&:hover {
-			@media all and (min-width: 50em) {
-                opacity: 0;
-                filter: alpha(opacity=0);
-                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-            }
-		}
-		@media all and (min-width: 50em) {
-			width: 100%;
-		}
-	}
-}
-
-.him {
-	@media all and (min-width: 50em) {
-		background-image: url('/assets/img/her-cp.png');
-		background-repeat: no-repeat;
-		height: 317px;
-		background-size: cover;
-	}
-	p {
-		padding: 0 10px;
-	}
-	img {
-        width: 100%;
-		height: 317px;
+		height: auto;
 		transition: opacity .2s ease-in;
 		-webkit-transition: opacity .2s ease-in; /*safari and chrome */
 		-o-transition: opacity .2s ease-in; /* opera */ 
