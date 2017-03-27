@@ -6,8 +6,8 @@
     </div>
 	<ul class="flex_container">
       <li ng-repeat="item in items" class="flex_item">
-        <h4>{{item.title}}</h4>
-        <h5>Gifted: {{item.gifted}}</h5>
+        <h4 class="nvm">{{item.title}}</h4>
+        <h5 class="nvm">Gifted: {{item.gifted}}</h5>
         <p>{{item.description}}</p>
         <form name="{{item.id}}" id="{{item.id}}" action="/charge.php" method="POST">
             <input type="hidden" id="amount" name="amount" value="{{item.amount}}"/>
@@ -22,5 +22,5 @@
       <button class="box_registry__custom box__none" id="customButton5"><span class="registry_button"><i class="fa fa-heart" aria-hidden="true"></i> Create your own gift</span></button>
 		</li>
 	</ul>
-    <p class="mail_hint">If Stripe isn't your cup of tea, you can use cash or a check instead! If you'll be joining us on the day of the wedding, you can bring it in person or send it to us by mail if you can't make it. In order to reserve your gift, please email <a href="mailto:kyle@kyle-lutes.com">kyle@kyle-lutes.com</a> with the gift name and amount, so we can update the website to make sure nobody else claims the gift you chose.</p>
+    <p class="mail_hint mtm">If Stripe isn't your cup of tea, you can use cash or a check instead! If you'll be joining us on the day of the wedding, you can bring it in person or send it to us by mail if you can't make it. In order to reserve your gift, please email <a href="mailto:kyle@kyle-lutes.com">kyle@kyle-lutes.com</a> with the gift name and amount, so we can update the website to make sure nobody else claims the gift you chose.</p>
 </div>

@@ -415,12 +415,14 @@ blockquote {
 		cursor: pointer;
 		padding: 10px 15px 5px 15px;
 		margin: 10px auto;
+		font: initial;
 		&__custom {
 			@extend .box_rsvp;
 			padding: 15px 15px 5px 15px;
 			cursor: pointer;
 			width: 60%;
 			margin: 0 auto;
+			font: initial;
 		}
 	}
 	&_submit {

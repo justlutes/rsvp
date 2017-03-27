@@ -418,6 +418,10 @@ textarea {
 .mbm {
   margin-bottom: 20px; }
 
+.nvm {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .ps10 {
   padding: 0 10px; }
 
@@ -1020,12 +1024,14 @@ blockquote {
 .box_registry {
   cursor: pointer;
   padding: 10px 15px 5px 15px;
-  margin: 10px auto; }
+  margin: 10px auto;
+  font: initial; }
   .box_registry__custom {
     padding: 15px 15px 5px 15px;
     cursor: pointer;
     width: 60%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font: initial; }
 
 .box_submit {
   background: #D4AA7D;
