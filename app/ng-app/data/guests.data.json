@@ -1,0 +1,22 @@
+{
+  "g1": {
+    "name": "kate fletcher",
+    "plusone": "Jerrod Fletcher",
+    "rsvp": false
+  },
+  "g2": {
+    "name": "test",
+    "plusone": "Test Plus",
+    "rsvp": false
+  },
+  "g3": {
+    "name": "jeff sweatland",
+    "plusone": "Jodi Sweatland",
+    "rsvp": false
+  },
+  "g4": {
+    "name": "karen acosta",
+    "plusone": "Ivan Acosta",
+    "rsvp": false
+  }
+}

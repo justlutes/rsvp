@@ -1,0 +1,62 @@
+/*~~~~~~~~~~~ Tools ~~~~~~~~~~~~~~*/
+
+.tc {
+    text-align: center;
+}
+
+.ti {
+    color: #000;
+}
+
+.mtm {
+    margin-top: 20px;
+}
+
+.mbm {
+    margin-bottom: 20px;
+}
+
+.nvm {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ps10 {
+    padding: 0 10px;
+}
+
+.oneoftwo {
+    @media all and (min-width: 50em) {
+        width: 50%;
+    }
+}
+
+.row {
+    display: block;
+}
+
+.ptn {
+    padding-top: 0px;
+}
+
+.fs12 {
+    font-size: 12px;
+    @media all and (min-width: 50em) {
+        font-size: 16px;
+    }
+}
+
+.mobile {
+    &__hide {
+        display: none;
+        @media all and (min-width: 50em) {
+        display: block;
+        }
+    }
+    &__show {
+        display: block;
+        @media all and (min-width: 50em) {
+        display: none;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<div class="container">
+	<h1 class="tc">{{event.title}}</h1>
+
+		<div ng-include="'/ng-app/event-detail/eventInfo.tpl.html'"></div>
+
+		<!--<div ng-bind-html="event.description" class="onecol"></div>-->
+
+		<rsvp-form event="event" show-form="showForm"></rsvp-form>
+</div>

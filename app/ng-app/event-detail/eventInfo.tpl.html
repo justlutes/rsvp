@@ -1,0 +1,20 @@
+<div class="container event_list__flex">
+	<div class="solid-bar"></div>
+	<ul class="flex_container">
+		<li class="flex_item">
+			<h3><i class="fa fa-calendar"></i> Where:</h3>
+			<p>{{event.location}}</p>
+		</li>
+		<li ng-if="event.rsvp && event.upcoming" ng-click="launchModal()" class="flex_item aside">
+			<div class="box_rsvp box__none">
+				<i class="fa fa-calendar"></i><p>RSVP</p>
+			</div>
+		</li>
+		<li ng-if="!event.rsvp || !event.upcoming" class="flex_item aside__closed"></li>
+		<li class="flex_item flex_item__last">
+			<h3><i class="fa fa-map-marker"></i> When:</h3>
+			<p>{{event.time.startDatetime | date:'EEEE'}}, {{event.time.startDatetime | date:'longDate'}}</p>
+			<p>{{event.time.startDatetime | date:'shortTime'}}-{{event.time.endDatetime | date:'shortTime'}}</p>
+		</li>
+	</ul>
+</div>

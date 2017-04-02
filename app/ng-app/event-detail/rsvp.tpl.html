@@ -1,0 +1,55 @@
+<div class="modal" ng-class="{'show': showForm}" ng-if="event.rsvp">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<a type="button" class="close" ng-click="closeModal()" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></a>
+				<h4 class="modal-title">RSVP to {{event.title}}</h4>
+
+				<div ng-include="'/ng-app/event-detail/eventInfoModal.tpl.html'"></div>
+			</div>
+
+			<form name="rsvpForm" novalidate>
+				<div class="modal-body">
+					<div class="row">
+						<div class="form-group form-inline">
+							<label for="name">Name:</label>
+							<input id="name" type="text" class="form-control" placeholder="Name" name="name" ng-model="guest.name" required>
+
+							<div ng-if="rsvpForm.name.$dirty && rsvpForm.name.$invalid" ng-messages="rsvpForm.name.$error" class="text-danger">
+								<span ng-message="required">Please Enter Your First &amp; Last Name</span>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="switch-field">
+								<input type="radio" name="attending" id="switch_left" ng-model="guest.attending" ng-value="true" required checked/>
+								<label for="switch_left">Attending</label>
+								<input type="radio" name="attending" ng-model="guest.attending" ng-value="false" id="switch_right"/>
+								<label for="switch_right">Not Attending</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group form-inline" ng-repeat="guestPlus in guests" ng-if="guest.name.toLowerCase().indexOf(guestPlus.name) == 0 && guest.attending">
+						<label for"guests">Your Guest: <strong>{{guestPlus.plusone}}</strong></label>
+						<div class="switch-field_plus mtm">
+								<input type="radio" name="plusOne" id="switch_left_plus" ng-model="guest.plusOne" ng-value="true" required checked/>
+								<label for="switch_left_plus">Attending</label>
+								<input type="radio" name="plusOne" ng-model="guest.plusOne" ng-value="false" id="switch_right_plus"/>
+								<label for="switch_right_plus">Not Attending</label>
+							</div>
+						</div>
+					</div>
+
+				<div class="modal-footer" ng-show="guest.name">
+					<button class="box_submit box__email" ng-click="processForm();" ng-disabled="rsvpForm.$invalid"><i class="fa fa-envelope-o"></i> Email RSVP</button>
+				</div>
+			</form>
+
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

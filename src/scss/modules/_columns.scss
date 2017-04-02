@@ -1,0 +1,176 @@
+/* columns */
+
+.onecol,
+.twocol,
+.threecol,
+.fourcol {
+	height:auto;
+	float:left;
+	margin:0 1.234567901235%; /* 10px / 810 */
+	padding:0;
+}
+
+.onecol {
+	width: 95%;
+    height: auto;
+    float: none;
+    margin: 0 10px;
+	@media all and (min-width: 50em) {
+		width: 940px;
+		height: auto;
+		float: left;
+		margin: 0 10px;
+	}
+	&_modal {
+		@media all and (min-width: 50em) {
+		width: 100%;
+		height: auto;
+		float: left;
+		margin: 0 10px;
+	}
+	}
+}
+
+.twocol {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+	@media all and (min-width: 50em) {
+		width: 49%;
+		float: left;
+		margin: 0 auto;
+	}
+	p {
+		padding: 0 10px;
+	}
+}
+
+.threecol {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.fourcol {
+    width: 100%;
+    height: auto;
+    margin: 0;
+	@media all and (min-width: 50em) {
+		width: 26%;
+		height: auto;
+		float: left;
+		margin: 0 10px;
+	}
+	
+}
+
+
+
+.direction-header {
+    width: 780px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+
+.directions {
+    width: 380px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+
+.fourcol-prop {
+	background:#68BCA5;
+	padding:30px 0 0 0;
+	height:135px;
+	-webkit-transition: background-color .25s ease-in; /*safari and chrome */
+ 	-o-transition: background-color .25s ease-in; /* opera */
+}
+
+.prop {
+	background-color: #000;
+	height:165px;
+	margin-bottom: 40px;
+}
+
+.fourcol-prop:hover {
+	background: $burnt_orange;
+	cursor: pointer;
+}
+
+.fivecol {
+    width: 172px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.sixcol {
+    width: 140px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.threecol_2 {
+    width: 620px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.fourcol_3 {
+    width: 95%;
+    height: auto;
+    float: none;
+    margin: 0 10px;
+	@media all and (min-width: 50em) {
+		width: 70%;
+		height: auto;
+		float: left;
+		margin: 0 10px;
+	}
+}
+
+
+.fivecol_3 {
+    width: 556px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.twelvecol {
+    width: 60px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.twelvecol_5 {
+    width: 380px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.twelvecol_7 {
+    width: 540px;
+    height: auto;
+    float: left;
+    margin: 0 10px;
+}
+
+.slidescol {
+	width: 90%;
+	margin: 0 0 0 3.5%;
+	@media all and (min-width: 50em) {
+		width: 63%;
+		height: auto;
+		margin: 0 auto;
+	}
+}

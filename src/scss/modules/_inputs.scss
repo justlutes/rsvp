@@ -1,0 +1,122 @@
+input.text, input.search, textarea.textarea {
+	border: none;
+	-moz-border-radius-bottomright: 3px 3px;
+	border-bottom-right-radius: 3px 3px;
+	background-color: #ccc;
+	height:20px;
+	padding: 10px 0;
+	border-top: 0px;
+	background: #ededed;
+}
+
+label {
+	color: #666;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(4em + 1px);
+  margin: 0 0 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background: #fff;
+  resize: none;
+  outline: none;
+}
+input[type="text"][required]:focus {
+  border-color: $honey_gold;
+}
+input[type="text"][required]:focus + label[placeholder]:before {
+  color: $honey_gold;
+}
+input[type="text"][required]:focus + label[placeholder]:before,
+input[type="text"][required]:valid + label[placeholder]:before {
+  transition-duration: .2s;
+  transform: translate(0, -1.5em) scale(0.9, 0.9);
+}
+input[type="text"][required]:invalid + label[placeholder][alt]:before {
+  content: attr(alt);
+}
+input[type="text"][required] + label[placeholder] {
+  display: block;
+  pointer-events: none;
+  line-height: 1em;
+  margin-top: calc(-3em - 2px);
+  margin-bottom: calc((3em - 1em) + 2px);
+}
+
+input[type="text"][required] + label[placeholder]:before {
+  content: attr(placeholder);
+  display: inline-block;
+  margin: 0 calc(1em + 2px);
+  padding: 0 2px;
+  color: #898989;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type="number"] {
+  box-sizing: border-box;
+  width: 53%;
+  height: calc(4em + 1px);
+  margin: 0 0 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background: #fff;
+  resize: none;
+  outline: none;
+}
+input[type="number"][required]:focus {
+  border-color: $honey_gold;
+}
+input[type="number"][required]:focus + label[placeholder]:before {
+  color: $honey_gold;
+}
+input[type="number"][required]:focus + label[placeholder]:before,
+input[type="number"][required]:valid + label[placeholder]:before {
+  transition-duration: .2s;
+  transform: translate(0, -1.5em) scale(0.9, 0.9);
+}
+input[type="number"][required]:invalid + label[placeholder][alt]:before {
+  content: attr(alt);
+}
+input[type="number"][required] + label[placeholder] {
+  display: block;
+  pointer-events: none;
+  line-height: 1em;
+  margin-top: calc(-3em - 2px);
+  margin-bottom: calc((3em - 1em) + 2px);
+}
+
+input[type="number"][required] + label[placeholder]:before {
+  content: attr(placeholder);
+  display: inline-block;
+  margin: 0 calc(1em + 2px);
+  padding: 0 2px;
+  color: #898989;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-size: 100% 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}

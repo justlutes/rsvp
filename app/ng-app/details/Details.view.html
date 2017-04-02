@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="solid-bar"></div>
+    <h3 class="tc mobile__show">Located at the</h3>
+    <h3 class="tc mbm mobile__show"><em>Luxmore Grande Estate<em></h3>
+    <h3 class="tc mbm mobile__hide">Located at the <em>Luxmore Grande Estate</em></h3>
+    <p class="tc">1120 Orange Avenue, Winter Springs FL 32708</p>
+    <p class="tc fs12">Click on the marker below to get directions via Google Maps</p>
+    <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        <ui-gmap-marker
+            idKey='marker.id'
+            coords='marker.coords'
+            click='marker.click'
+            options='marker.options'
+            events='marker.events'
+            control='marker.control'
+            url='marker.url'
+            >
+        </ui-gmap-marker>
+    </ui-gmap-google-map>
+</div>

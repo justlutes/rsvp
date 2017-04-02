@@ -1,0 +1,66 @@
+<div class="container">
+	<div class="bump"></div>
+
+	<div class="fourcol_3">
+		<blockquote>Our love story is adding another chapter! We hope this website will give you a glimpse into all the details
+			leading up to our wedding day. We will officially tie the knot as Mr. &amp; Mrs. Lutes on February 16, 2018 and we can't
+		    wait to celebrate this special day with our family and friends!
+			<a href="/event/wedding">Don't forget to RSVP</a>! &mdash; C &amp; K</blockquote>
+	</div>
+
+	<div class="fourcol">
+		<a href="/event/wedding">
+		<div class="count">
+			<p class="bb">The ceremony begins in:</p>
+			<p id="countdown">[countdown]</p>
+			<script language="JavaScript">
+				if(document.getElementById("countdown")){
+				 	StartCountDown("countdown", "02/16/2018 05:00 PM -0500");
+				}
+				 function StartCountDown(myDiv, myTargetDate) {
+					var dthen = new Date(myTargetDate);
+					var dnow = new Date();
+					ddiff = new Date(dthen - dnow);
+					gsecs = Math.floor(ddiff.valueOf() / 1000);
+					CountBack(myDiv, gsecs);
+				}
+
+				function Calcage(secs, num1, num2) {
+					s = ((Math.floor(secs / num1)) % num2).toString();
+					if (s.length < 2) {
+						s = "0" + s;
+					}
+					return (s);
+				}
+
+				function CountBack(myDiv, secs) {
+					var DisplayStr;
+					var DisplayFormat = "%%D%% Days %%H%%:%%M%%:%%S%%";
+					DisplayStr = DisplayFormat.replace(/%%D%%/g, Calcage(secs, 86400, 100000));
+					DisplayStr = DisplayStr.replace(/%%H%%/g, Calcage(secs, 3600, 24));
+					DisplayStr = DisplayStr.replace(/%%M%%/g, Calcage(secs, 60, 60));
+					DisplayStr = DisplayStr.replace(/%%S%%/g, Calcage(secs, 1, 60));
+					if (secs > 0 && myDiv.length > 0) {
+						document.getElementById(myDiv).innerHTML = DisplayStr;
+						setTimeout("CountBack('" + myDiv + "'," + (secs - 1) + ");", 990);
+					}
+					else {
+						document.getElementById(myDiv).innerHTML = "It is Over";
+					}
+				}
+			</script>
+		</div></a><!--<count-->
+	</div>
+	<div class="bump"></div>
+	<div class="container">
+		<div class="our_story">
+			<img src="/assets/img/our_story1.png">
+		</div>
+		<h1 class="profile">Our Story</h1>
+			<p class="ps10">This story began just about 10 years ago. Kyle and Chelsea were both in the marching band together in high school, where Kyle was in the band and Chelsea performed with the color guard. The first time Chelsea ever laid eyes on Kyle, was on their band trip to Chicago. Chelsea waited all the way until summer break until she brought it to the attention of a mutual friend that she thought Kyle was a cutie. The friend played telephone between the two for a few days during band camp before Kyle asked Chelsea out on a date, and so it begins!</p>	
+			<p class="ps10">The first date was a night out to a movie, and the second “date” was a High School Musical 2 party at a friend’s house, and their relationship gradually fell into place!</p>
+			<p class="ps10">The first year they dated, they spent all the time they could together. The second year, Kyle went off to college and Chelsea stayed behind to finish her senior year, and it was a little more difficult. In old school fashion, they sent letters to each other frequently, enjoyed time together on weekends, and school breaks. Their third year was filled with constant road trips to see each other until finally, their fourth year allowed them to be in the same place, Gainesville. At this point it was safe to say, that someday, there would be a forever. Five years turned into six and then a fur baby named Layla was born, and came to make their family a family of three.</p>
+			<p class="ps10">A few years later, their anniversaries turned into double digits, and 10 years after high school band camp, they are finally getting married!</p>
+	</div>
+</div><!--</container-->
+<div class="bump"></div>
