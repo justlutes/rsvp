@@ -536,15 +536,12 @@ body#services a#servicesnav {
   z-index: -9999; }
 
 .mobile_nav {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   background: transparent;
   margin: 0;
   font-family: "Fira Sans", sans-serif; }
@@ -574,8 +571,7 @@ body#services a#servicesnav {
     visibility: visible;
     opacity: 1;
     transition: .3s;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); }
+    transform: rotateY(0deg); }
     .menu span:nth-of-type(1) {
       transition-delay: .4s; }
     .menu span:nth-of-type(2) {
@@ -590,8 +586,7 @@ body#services a#servicesnav {
       width: 0;
       visibility: hidden;
       opacity: 0;
-      -webkit-transform: rotateY(90deg);
-              transform: rotateY(90deg); }
+      transform: rotateY(90deg); }
       .menu span.hidden:nth-of-type(1) {
         transition-delay: .4s; }
       .menu span.hidden:nth-of-type(2) {
@@ -642,14 +637,12 @@ body#services a#servicesnav {
   .toggle:after {
     top: 30%; }
   .toggle.close:before {
-    -webkit-transform: rotate(-225deg);
-        -ms-transform: rotate(-225deg);
-            transform: rotate(-225deg);
+    -ms-transform: rotate(-225deg);
+        transform: rotate(-225deg);
     top: 0; }
   .toggle.close:after {
-    -webkit-transform: rotate(225deg);
-        -ms-transform: rotate(225deg);
-            transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+        transform: rotate(225deg);
     top: 0; }
 
 body {
@@ -957,11 +950,9 @@ blockquote {
   margin: 0;
   list-style: none;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -webkit-flex-flow: row wrap; }
+      flex-flow: row wrap; }
 
 .flex_item {
   padding: 5px;
@@ -981,9 +972,8 @@ blockquote {
     margin: 20px 0;
     color: #544C3F; }
   .flex_item__last {
-    -webkit-flex-grow: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
+    -ms-flex-positive: 2;
+        flex-grow: 2;
     line-height: 0; }
 
 .aside {
@@ -1000,20 +990,17 @@ blockquote {
         font-size: 45px; } }
 
 .box_rsvp, .box_registry, .box_registry__custom, .box_submit {
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   background: transparent;
   border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   color: #D4AA7D;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-weight: 100;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin: 10px;
   padding: 15px;
   transition: all 400ms ease-in-out;
@@ -1127,9 +1114,7 @@ footer {
   border: 0.2em solid #A62A20;
   padding: 0.8em;
   text-align: center;
-  transition: 0.25s box-shadow, 0.25s -webkit-transform;
   transition: 0.25s box-shadow, 0.25s transform;
-  transition: 0.25s box-shadow, 0.25s transform, 0.25s -webkit-transform;
   width: 100%;
   margin-bottom: 10px; }
   .btn-success {
@@ -1140,9 +1125,8 @@ footer {
         margin-left: 0; } }
     .btn-success:hover {
       box-shadow: 0 4em 0 0 #D1A054 inset, 0em 0em 0 0 #bbb;
-      -webkit-transform: translate(0.3em, 0.2em);
-          -ms-transform: translate(0.3em, 0.2em);
-              transform: translate(0.3em, 0.2em);
+      -ms-transform: translate(0.3em, 0.2em);
+          transform: translate(0.3em, 0.2em);
       color: #666; }
   .btn-default {
     border: 0.2em solid #A62A20; }
@@ -1152,9 +1136,8 @@ footer {
         margin-left: 235px; } }
     .btn-default:hover {
       box-shadow: 0 4em 0 0 #A62A20 inset, 0em 0em 0 0 #bbb;
-      -webkit-transform: translate(0.3em, 0.2em);
-          -ms-transform: translate(0.3em, 0.2em);
-              transform: translate(0.3em, 0.2em);
+      -ms-transform: translate(0.3em, 0.2em);
+          transform: translate(0.3em, 0.2em);
       color: #fff; }
 
 /* columns */
@@ -1346,9 +1329,8 @@ input[type="text"][required]:focus + label[placeholder]:before {
 input[type="text"][required]:focus + label[placeholder]:before,
 input[type="text"][required]:valid + label[placeholder]:before {
   transition-duration: .2s;
-  -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
-      -ms-transform: translate(0, -1.5em) scale(0.9, 0.9);
-          transform: translate(0, -1.5em) scale(0.9, 0.9); }
+  -ms-transform: translate(0, -1.5em) scale(0.9, 0.9);
+      transform: translate(0, -1.5em) scale(0.9, 0.9); }
 
 input[type="text"][required]:invalid + label[placeholder][alt]:before {
   content: attr(alt); }
@@ -1393,9 +1375,8 @@ input[type="number"][required]:focus + label[placeholder]:before {
 input[type="number"][required]:focus + label[placeholder]:before,
 input[type="number"][required]:valid + label[placeholder]:before {
   transition-duration: .2s;
-  -webkit-transform: translate(0, -1.5em) scale(0.9, 0.9);
-      -ms-transform: translate(0, -1.5em) scale(0.9, 0.9);
-          transform: translate(0, -1.5em) scale(0.9, 0.9); }
+  -ms-transform: translate(0, -1.5em) scale(0.9, 0.9);
+      transform: translate(0, -1.5em) scale(0.9, 0.9); }
 
 input[type="number"][required]:invalid + label[placeholder][alt]:before {
   content: attr(alt); }
@@ -1517,15 +1498,11 @@ input[type="number"][required] + label[placeholder]:before {
   outline: 0; }
 
 .modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   transform: translate(0, -25%);
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+  transition: transform 0.3s ease-out; }
 
 .modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   transform: translate(0, 0); }
 
