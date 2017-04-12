@@ -1,5 +1,5 @@
 /*!
- * ng-rsvp
+ * wedding rsvp
  * 
  * 
  * @author Kyle Lutes

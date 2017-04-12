@@ -524,7 +524,7 @@ body#services a#servicesnav {
   height: 30vw;
   margin: 0 auto;
   text-align: center;
-  background: url(/assets/img/forever_always.png) center center no-repeat;
+  background: url(/assets/img/forever_always.png) top center no-repeat;
   background-size: cover; }
   @media all and (min-width: 50em) {
     .top {
@@ -543,7 +543,7 @@ body#services a#servicesnav {
   -ms-flex-align: center;
       align-items: center;
   background: transparent;
-  margin: 0;
+  margin-top: 15px;
   font-family: "Fira Sans", sans-serif; }
   @media all and (min-width: 50em) {
     .mobile_nav {
