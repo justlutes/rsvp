@@ -70,12 +70,12 @@
 			}
 		}
 		a {
-			color: $chocolate;
+			color: $black_olive;
 			text-decoration: none;
 			font-size: $size/3.16; //14.36
 			transition: .3s;
 			&:hover {
-				color: $honey_gold;
+				color: $silver;
 			}
 		}
 	}
@@ -99,7 +99,7 @@
 	&:after,
 	&:before {
 		content: '';
-		background: $french_beige;
+		background: $pink;
 		width: $size;
 		height: $height;
 		margin: auto;

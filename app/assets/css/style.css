@@ -608,12 +608,12 @@ body#services a#servicesnav {
       .menu span.hidden:nth-of-type(5) {
         transition-delay: 0s; }
     .menu span a {
-      color: #4E2E28;
+      color: #393E41;
       text-decoration: none;
       font-size: 11.39241px;
       transition: .3s; }
       .menu span a:hover {
-        color: #D1A054; }
+        color: #ADADAD; }
 
 .container__mobile_nav {
   position: absolute;
@@ -632,7 +632,7 @@ body#services a#servicesnav {
   cursor: pointer; }
   .toggle:after, .toggle:before {
     content: '';
-    background: #D4AA7D;
+    background: #F88379;
     width: 36px;
     height: 4.5px;
     margin: auto;
