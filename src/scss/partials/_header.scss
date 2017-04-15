@@ -2,7 +2,7 @@
 
 #menu {
 	display: none;
-	margin: -43px auto 0 auto;
+	margin: 10px auto 0 auto;
 	text-align: center;
 	width: 100%;
 	height: auto;
@@ -30,10 +30,10 @@ li#menunav {
 
 
 #menunav a {
-	color: $dark_liver;
+	color: $black_olive;
 	margin:0 7px;
 	&:hover {
-		border-bottom: 5px solid $french_beige;
+		border-bottom: 5px solid $pink;
 	}
 }
 
@@ -78,10 +78,10 @@ border-bottom: 5px solid $tuscan;
 	height:30vw;
 	margin: 0 auto;
 	text-align: center;
-	background: url(/assets/img/forever_always.png) top center no-repeat;
+	background: url(/assets/img/forever_always2.png) top center no-repeat;
 	background-size: cover;
 	@media all and (min-width: 50em) {
-		height:40vw;
+		height:28vw;
 	}
 }
 

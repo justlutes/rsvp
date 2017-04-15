@@ -62,7 +62,7 @@ img.prop:hover {
 }
 
 p a, blockquote a {
-    color: $french_beige;
+    color: $pink;
     background-color: none;
     text-decoration: none;
     -webkit-transition: color .2s ease-in; /*safari and chrome */
@@ -70,12 +70,12 @@ p a, blockquote a {
 }
 
 p a:hover, blockquote a:hover {
-    color:$champagne_pink;
+    color:darken($pink, 20%);
 
 }
 
 p {
-	color: #666;
+	color: $black_olive;
 	font-family: $secondary-font;
 	font-style: normal;
 	font-weight: 400;
@@ -172,19 +172,19 @@ ul.details li {
 }
 
 .count {
-	background:$french_beige;
+	background:$indepedence;
 	padding:12px 0 0 0;
 	width:100%;
 	height:151px;
-	-webkit-transition: background-color .25s ease-in; /*safari and chrome */
- 	-o-transition: background-color .25s ease-in; /* opera */
+	-webkit-transition: all .25s ease-in; /*safari and chrome */
+ 	-o-transition: all .25s ease-in; /* opera */
 	 @media all and (min-width: 50em) {
 		height: 183px;
 	}
 }
 
 .count:hover {
-	background: $tuscan;
+	background: lighten($indepedence, 20%);
 	cursor:pointer;
 }
 
@@ -369,7 +369,7 @@ blockquote {
 		}
 	h3 {
 		margin: 20px 0;
-		color: $dark_liver;
+		color: $black_olive;
 	}
 	&__last {
 		flex-grow: 2;
@@ -381,7 +381,7 @@ blockquote {
 	cursor: pointer;
     margin-left: 5px;
 	p {
-		color: $french_beige;
+		color: $pink;
 		text-transform: uppercase;
 		font-size: 35px;
 		line-height: 50px;
@@ -398,14 +398,14 @@ blockquote {
 		background: transparent;
 		border-radius: 4px;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-		color: $french_beige;
+		color: $pink;
 		display: flex;
 		font-weight: 100;
 		justify-content: center;
 		margin: 10px;
 		padding: 15px;
 		transition: all 400ms ease-in-out;
-		border: 2px solid $french_beige;
+		border: 2px solid $pink;
 		p {
 			padding-left: 5px;
 		}
@@ -427,7 +427,7 @@ blockquote {
 	}
 	&_submit {
 		@extend .box_rsvp;
-		background: $french_beige;
+		background: $pink;
 		width: 50%;
 		margin: 0 auto;
 		cursor: pointer;
@@ -448,15 +448,15 @@ blockquote {
 	}
 	&__email {
 		&:hover {
-			background: $champagne_pink;
+			background: lighten($pink, 20%);
 			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-			color: $dark_liver;
+			color: $black_olive;
 		}
 		&:active {
 			background: $champagne_pink;
 			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 			transition: all 50ms;
-			color: $dark_liver;
+			color: $black_olive;
 		}
 	}
 }
@@ -470,12 +470,8 @@ blockquote {
 	min-height: 20px;
 }
 .mail_hint {
-	padding: 0px 10px;
 	line-height: 15px;
 	color: #afafaf;
-	@media all and (min-width: 50em) {
-		padding: 0px 200px;
-	}
 }
 
 .angular-google-map-container {
