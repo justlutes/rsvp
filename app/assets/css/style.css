@@ -1480,7 +1480,7 @@ input[type="number"][required] + label[placeholder]:before {
   position: relative;
   padding-top: 85px; }
 
-.style_prevu_kit {
+.party_block {
   display: inline-block;
   border: 0;
   width: 196px;
@@ -1494,18 +1494,30 @@ input[type="number"][required] + label[placeholder]:before {
   -moz-transform: scale(1);
   transition: all 200ms ease-in;
   transform: scale(1); }
-
-.style_prevu_kit:hover {
-  box-shadow: 0px 0px 150px #000000;
-  z-index: 2;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.5);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1.5);
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1.5);
-  transition: all 200ms ease-in;
-  transform: scale(1.5); }
+  .party_block:nth-of-type(1) {
+    background-color: #F88379; }
+  .party_block:nth-of-type(2) {
+    background-color: #ADADAD; }
+  .party_block:nth-of-type(3) {
+    background-color: #EFD9BF; }
+  .party_block:nth-of-type(4) {
+    background-color: #393E41; }
+  .party_block:nth-of-type(5) {
+    background-color: #354E76; }
+  .party_block:hover {
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5); }
+  .party_block > p {
+    position: relative;
+    top: 180px; }
 
 .modal-open {
   overflow: hidden; }
