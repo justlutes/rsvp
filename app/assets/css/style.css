@@ -1501,11 +1501,9 @@ input[type="number"][required] + label[placeholder]:before {
   .party_block:nth-of-type(3) {
     background-color: #EFD9BF; }
   .party_block:nth-of-type(4) {
-    background-color: #393E41; }
-  .party_block:nth-of-type(5) {
     background-color: #354E76; }
   .party_block:hover {
-    box-shadow: 0px 0px 150px #000000;
+    box-shadow: 0px 0px 25px #000000;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.5);
