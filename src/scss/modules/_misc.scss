@@ -16,13 +16,17 @@
 
 .fond {
   position:relative;
-  padding-top:85px;
+  padding-top:20px;
+  @media all and (min-width: 50em) {
+    padding-top:35px;
+  }
 }
 
 .party_block {
+    cursor: pointer;
     display:inline-block;
     border:0;
-    width:196px;
+    width:170px;
     height:210px;
     position: relative;
     -webkit-transition: all 200ms ease-in;
@@ -33,17 +37,26 @@
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
     transform: scale(1);
+    overflow: hidden;
+    @media all and (min-width: 50em) {
+       width:196px;
+       margin: 0 10px;
+    }
     &:nth-of-type(1){
       background-color: $pink;
+      background: url(/assets/img/party_temp.jpg) top center no-repeat;
     }
     &:nth-of-type(2){
       background-color: $silver;
+      background: url(/assets/img/party_temp.jpg) top center no-repeat;          
     }
     &:nth-of-type(3){
       background-color: $dutch;
+      background: url(/assets/img/party_temp.jpg) top center no-repeat;
     }
     &:nth-of-type(4){
       background-color: $indepedence;
+      background: url(/assets/img/party_temp.jpg) top center no-repeat;
     }
     &:hover {
       box-shadow: 0px 0px 25px #000000;
@@ -56,9 +69,17 @@
       -moz-transform: scale(1.5);
       transition: all 200ms ease-in;
       transform: scale(1.5);
+      > p {
+        font-size: 25px;
+        top: 170px;
+        transition: all .3s ease-in;
+      }
     }
     > p {
       position: relative;
-      top: 180px;
+      font-size: 20px;
+      top: 175px;
+      color: #fff;
+      font-family: $accent-font;
     }
 }
