@@ -111,10 +111,12 @@ h1 {
 h1.profile {
     width: 95%;
     margin: 15px 0;
-    font-size: 28px;
-    line-break: 28px;
+    font-size: 40px;
+    line-height: 28px;
     padding-left: 10px;
     text-align: center;
+    font-family: $accent-font;
+    text-transform: none;
 
     @media all and (min-width: 50em) {
         width: 100%;
@@ -248,11 +250,11 @@ ul.details li {
 }
 
 blockquote {
-    color: #000;
-    font-family: $secondary-font;
+    color: $black_olive;
+    font-family: $accent-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
     margin: 0 0 15px 0;
     letter-spacing: .04em;
@@ -261,9 +263,13 @@ blockquote {
     padding: 20px;
 
     @media all and (min-width: 50em) {
-        font-size: 21px;
+        font-size: 25px;
         line-height: 31px;
     }
+}
+
+.intro {
+    min-height: 185px;
 }
 
 .our_story {
@@ -304,6 +310,11 @@ blockquote {
     }
 }
 
+.proposal {
+    font-family: $accent-font;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
 .event_list {
     &__modal {
         text-align: center;

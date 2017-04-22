@@ -8,8 +8,6 @@ angular
 			        dots: true,
 	                infinite: true,
 	                speed: 300,
-	                centerMode: true,
-	                centerPadding: '50px',
 	                slidesToShow: 3,
 	                responsive: [
 	                    {

@@ -59,21 +59,23 @@
       background: url(/assets/img/party_temp.jpg) top center no-repeat;
     }
     &:hover {
-      box-shadow: 0px 0px 25px #000000;
-      z-index: 2;
-      -webkit-transition: all 200ms ease-in;
-      -webkit-transform: scale(1.5);
-      -ms-transition: all 200ms ease-in;
-      -ms-transform: scale(1.5);
-      -moz-transition: all 200ms ease-in;
-      -moz-transform: scale(1.5);
-      transition: all 200ms ease-in;
-      transform: scale(1.5);
-      > p {
-        font-size: 25px;
-        top: 170px;
-        transition: all .3s ease-in;
+      @media all and (min-width: 50em) {
+        box-shadow: 0px 0px 25px #000000;
+        z-index: 2;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
       }
+        > p {
+          font-size: 25px;
+          top: 170px;
+          transition: all .3s ease-in;
+        }
     }
     > p {
       position: relative;
