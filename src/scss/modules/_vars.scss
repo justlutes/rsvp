@@ -3,11 +3,21 @@ Colors:
 */
 $grey: #444;
 $turq: #68BCA5;
-$honey_gold: #D1A054; /* rgb 209, 160, 84 */
-$bonfire: #A62A20; /* rgb 166, 42, 32 */
-$burnt_orange: #BF5700; /* rgb 191, 87, 0 */
-$chocolate: #4E2E28; /* rgb 78,46,40 */
-$burgundy: #8C001A; /* rgb 140, 0, 26 */
+$honey_gold: #D1A054;
+
+/* rgb 209, 160, 84 */
+$bonfire: #A62A20;
+
+/* rgb 166, 42, 32 */
+$burnt_orange: #BF5700;
+
+/* rgb 191, 87, 0 */
+$chocolate: #4E2E28;
+
+/* rgb 78,46,40 */
+$burgundy: #8C001A;
+
+/* rgb 140, 0, 26 */
 
 $dark_liver: #544C3F;
 $champagne_pink: #E9DBD0;
@@ -26,13 +36,14 @@ $dutch: #EFD9BF;
 $size: 36px;
 $height: $size / 8;
 $margin: $size / 3.2;
-$toggle: ($size + $margin*2) * 1.5;
+$toggle: ($size + $margin * 2) * 1.5;
 
-// fonts 
+// fonts
 
-$primary-font: 'Fira Sans', sans-serif;
-$secondary-font: 'Playfair Display', serif;
+$primary-font: "Fira Sans", sans-serif;
+$secondary-font: "Playfair Display", serif;
+$accent-font: "Cookie", cursive;
 
-$base:white;
+$base: white;
 $darken: darken(white, 30%);
 $back: darken(white, 40%);

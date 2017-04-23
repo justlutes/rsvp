@@ -1,40 +1,40 @@
 /*~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~*/
 
 #menu {
-	display: none;
-	margin: 10px auto 0 auto;
-	text-align: center;
-	width: 100%;
-	height: auto;
-	padding: 19px 0;
-	font-family: $primary-font;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 26px;
-	text-transform: uppercase;
-	letter-spacing: -.03em;
-	@media all and (min-width: 50em) {
-		display: block;
-		background: #f6f6f6;
-		width: 55vw;
-		font-size: 25px;
-	}
-}
+    display: none;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 19px 0;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: -.03em;
 
+    @media all and (min-width: 50em) {
+        display: block;
+        background: #f6f6f6;
+        width: 55vw;
+        font-size: 25px;
+    }
+}
 
 li#menunav {
-	display: inline;
-	text-align: center;
-	margin: 0 auto;
+    display: inline;
+    text-align: center;
+    margin: 0 auto;
 }
 
-
 #menunav a {
-	color: $black_olive;
-	margin:0 7px;
-	&:hover {
-		border-bottom: 5px solid $pink;
-	}
+    color: $black_olive;
+    margin: 0 7px;
+
+    &:hover {
+        border-bottom: 5px solid $pink;
+    }
 }
 
 body#home a#homenav,
@@ -43,50 +43,51 @@ body#rsvp a#rsvpnav,
 body#details a#detailsnav,
 body#registry a#registrynav,
 body#services a#servicesnav {
-color: #000;
-border-bottom: 5px solid $tuscan;
+    color: #000;
+    border-bottom: 5px solid $tuscan;
 }
-
 
 ::selection {
-    background:$french_beige;
+    background: $french_beige;
 }
+
 ::-moz-selection {
-    background:$french_beige;
+    background: $french_beige;
 }
+
 ::-webkit-selection {
-    background:$french_beige;
+    background: $french_beige;
 }
 
 .zag {
-	background-image: url('/assets/img/zag.png');
-	background-repeat: repeat-x;
-	width: 100%;
-	height: 25px;
-	margin-top: -50px;
-	margin-bottom: 35px;
-	@media all and (min-width: 50em) {
-		margin-top: 20px;
-		margin-bottom: 0;
-	}
+    background-image: url("/assets/img/zag.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 25px;
+    margin-top: -50px;
+    margin-bottom: 35px;
+    @media all and (min-width: 50em) {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
 }
 
-
 .top {
-	max-width: 100%;
-	width:100%;
-	height:30vw;
-	margin: 0 auto;
-	text-align: center;
-	background: url(/assets/img/forever_always2.png) top center no-repeat;
-	background-size: cover;
-	@media all and (min-width: 50em) {
-		height:28vw;
-	}
+    max-width: 100%;
+    width: 100%;
+    height: 30vw;
+    margin: 0 auto;
+    text-align: center;
+    background: url(/assets/img/forever_always2.png) top center no-repeat;
+    background-size: cover;
+
+    @media all and (min-width: 50em) {
+        height: 28vw;
+    }
 }
 
 .top img {
-	width:100%;
-	max-width: 100%;
-	z-index:-9999;
+    width: 100%;
+    max-width: 100%;
+    z-index: -9999;
 }
